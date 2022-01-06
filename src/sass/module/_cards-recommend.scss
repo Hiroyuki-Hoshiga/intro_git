@@ -1,0 +1,14 @@
+.cards-recommend {
+  margin-top: rem(29);
+  margin-bottom: rem(24);
+}
+
+.cards-recommend__item {
+  margin-bottom: rem(28);
+}
+
+.cards-recommend__item:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+

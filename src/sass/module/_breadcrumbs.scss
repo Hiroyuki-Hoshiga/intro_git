@@ -1,0 +1,37 @@
+.breadcrumbs {
+  font-size: rem(12);
+  color: $base;
+  background: #f8f8f8;
+  height: rem(50);
+  display: flex;
+}
+
+.breadcrumbs__inner {
+  height: inherit;
+  display: flex;
+  align-items: center;
+
+  a {
+    text-decoration: underline;
+  }
+
+  .home {
+    margin-right: rem(7);
+    font-size: rem(12);
+  }
+  
+  .post {
+    margin-left: rem(8);
+    margin-right: rem(7);
+    font-size: rem(12);
+  }
+
+  .archive {
+    margin-left: rem(8);
+    margin-right: rem(7);
+  }
+  .category {
+    margin-left: rem(8);
+    margin-right: rem(7);
+  }
+}

@@ -1,0 +1,65 @@
+/***トップへ戻るボタン***/
+.back-button {
+  position: fixed;
+
+
+  bottom: rem(22);
+  right: rem(20);
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: .3s;
+  z-index: 100;
+  /*デフォルトで非表示にする*/
+  opacity: 0;
+  visibility: hidden;
+
+  @include mq("md") {
+    bottom: rem(48);
+    right: rem(31);
+  }
+}
+
+/*このクラスが付与されると表示する*/
+.back-button.active {
+opacity: 1;
+visibility: visible;
+}
+
+
+.arrow{
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  padding-left: 20px;
+  transition: .3s;
+}
+
+.arrow::before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 0px;
+  border-top: solid 2px #333333;
+  border-right: solid 2px #333333;
+  transform: rotate(315deg);
+  position: absolute;
+  top: 50%;
+  left: 26%;
+  margin-top: -4px;
+}
+.arrow:hover {
+  background-color: #333333;
+  cursor: pointer;
+}
+
+.arrow:hover::before {
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff;
+}
+/***トップへ戻るボタンここまで***/
+
+

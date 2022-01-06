@@ -1,0 +1,73 @@
+/* contact */
+.contact {
+  background-color: #3D3D3D;
+  position: relative;
+}
+
+.contact__inner {
+  padding-top: rem(67);
+  padding-bottom: rem(40);
+  max-width: rem(600);
+  margin: 0 auto;
+
+  @include mq("md") {
+    max-width: rem(1100);
+    padding-top: rem(149);
+    padding-bottom: rem(125);
+  }
+}
+  
+.contact__header {
+  margin-bottom: rem(12);
+  
+  @include mq("md") {
+    max-width: rem(1100);
+    margin: 0 auto;
+    margin-bottom: rem(0);
+    }
+}
+
+.contact__header-title {
+  text-align: center;
+}
+
+.contact__header-subtitle {
+  text-align: center;
+  margin-top: rem(-59);
+
+  @include mq("md") {
+    text-align: left;
+    margin-top: rem(-98);
+  }
+}
+
+.contact__desc {
+  padding-top: rem(21);
+  padding-bottom: rem(18);
+
+  @include mq("md") {
+    text-align: center;
+  }
+}
+
+.contact__copy {
+  font-size: rem(16);
+  color: #fff;
+  line-height: rem(23);
+  letter-spacing: rem(2);
+  margin-bottom: rem(46);
+
+  @include mq("md") {
+    margin-bottom: rem(65);
+  }
+}
+
+.contact__btn {
+  display: block;
+  margin: 0 auto;
+  font-size: rem(16);
+
+  @include mq("md") {
+    margin-top: rem(-4);      
+  }
+}

@@ -1,0 +1,30 @@
+.card-related {
+  display: flex;
+}
+
+.card-related:hover {
+  cursor: pointer;
+}
+
+.card-related__image {
+}
+
+.card-related__image img {
+  width: rem(100);
+  height: rem(70);
+  object-fit: cover;
+}
+
+.card-related__body {
+  flex: 1;
+  font-size: rem(16);
+  padding-left: rem(20);
+}
+
+.card-related__title {
+  font-size: rem(12);
+  letter-spacing: rem(0);
+  line-height: rem(24);
+  color: $base;
+  text-decoration: underline;
+}

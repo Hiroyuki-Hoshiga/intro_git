@@ -1,0 +1,102 @@
+.header {
+  background: $white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: rem(80);
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.header__right {
+  font-size: rem(16);
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.header__contact-items {
+  font-size: rem(16);
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.header__logo {
+  margin-left: rem(15);
+  }
+
+.header__logo img {
+  width: rem(136);
+}
+
+.header-nav {
+  display: block;
+}
+
+.header-nav__list {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  font-size: rem(16);
+}
+
+.header-nav__item {
+  margin-right: rem(28);
+  height: inherit;
+  
+  &:last-child {
+    margin-right: 0;
+  }
+  
+  a {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    font-size: rem(16);
+    color:$base;
+    line-height: rem(50);
+    letter-spacing: 0px;
+  }
+}
+
+.header__info {
+text-align: right;
+margin-right: rem(13);
+}
+.header__business-hour {
+  font-size: rem(12);
+  margin-top: rem(12);
+}
+.header__tel {
+  font-size: rem(16);
+  font-weight: bold;
+  margin-top: rem(3);
+}
+
+.header__tel:before {
+  content: "";
+  display: inline-block;
+  width: rem(10);
+  height: rem(15);
+  background: url(../../assets/images/home/tel-icon.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  margin-right: rem(5);
+}
+
+.header__contact-item {
+  margin-right: rem(10);
+}

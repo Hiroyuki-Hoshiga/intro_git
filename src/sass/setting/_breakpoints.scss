@@ -1,0 +1,18 @@
+@import "inner";
+
+//ブレイクポイント
+$breakpoints: (
+  sm: 600,
+  md: 768,
+  lg: 1024,
+  xl: 1440,
+);
+
+
+//メディアクエリー
+$mediaquerys: (
+  sm: "screen and (min-width: #{map-get($breakpoints,'sm')}px)",
+  md: "screen and (min-width: #{map-get($breakpoints,'md')}px)",
+  lg: "screen and (min-width: #{map-get($breakpoints,'lg')}px)",
+  xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
+);

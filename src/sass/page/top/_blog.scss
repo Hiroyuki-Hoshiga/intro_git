@@ -1,0 +1,41 @@
+/* blog */
+.blog {
+  width: 50%;
+}
+
+.blog__inner {
+}
+
+.blog__header {
+  font-size: rem(32);
+  color: $base;
+  margin-bottom: rem(27);
+}
+
+.blog__body {
+  position: relative;
+}
+
+.blog__btn {
+  text-align: center;
+  font-size: rem(16);
+  margin-top: rem(-1);
+  margin-left: rem(20);
+  margin-right: rem(20);
+  
+  @include mq("md") {
+    margin-top: rem(23);
+    margin-right: rem(0);
+    margin-left: rem(0);
+
+  }
+}
+
+.post {
+
+}
+
+.post__inner {
+  display: flex;
+
+}

@@ -1,0 +1,17 @@
+.medias {
+
+}
+
+.medias__item {
+
+  @include mq("md") {
+    align-items: flex-start;
+    margin-bottom: rem(54);
+  }
+}
+.medias__item:last-child {
+
+  @include mq("md") {
+    margin-bottom: rem(0);
+  }
+}

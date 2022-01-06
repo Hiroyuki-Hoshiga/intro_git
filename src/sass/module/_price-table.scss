@@ -1,0 +1,22 @@
+.price-table {
+}
+
+.price-table__list {
+  display: flex;
+}
+
+.price-table__item {
+  height: rem(413);
+  margin-right: rem(8);
+
+  &:last-child {
+    margin-right: rem(0);
+  }
+}
+
+.card-price {
+  text-align: center;
+}
+.card-price__body {
+}
+

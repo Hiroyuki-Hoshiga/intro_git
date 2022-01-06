@@ -1,0 +1,58 @@
+.card-recommend {
+  display: flex;
+}
+
+.card-recommend:hover {
+  cursor: pointer;
+}
+
+.card-recommend__image {
+  position: relative;
+}
+
+
+.card-recommend__image img {
+  width: rem(210);
+  height: rem(128);
+  object-fit: cover;
+}
+
+
+.card-recommend__cate {
+  position: absolute;
+  content: "";
+  font-size: rem(12);
+  color: $white;
+  top: rem(0);
+  left: rem(0);
+  background: $base;
+  width: rem(80);
+  height: rem(28);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #707070;
+  z-index: 10;
+}
+
+.card-recommend__body {
+  flex: 1;
+  font-size: rem(16);
+  padding-left: rem(32);
+}
+
+.card-recommend__title {
+  font-size: rem(18);
+  letter-spacing: rem(0);
+  line-height: rem(27);
+  color: $base;
+  text-decoration: underline;
+  margin-top: rem(16);
+}
+
+.card-recommend__date {
+  font-size: rem(16);
+  color: $base;
+  margin-top: auto;
+}

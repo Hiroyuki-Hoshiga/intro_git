@@ -1,0 +1,14 @@
+.cards-blog {
+  margin-top: rem(32);
+  margin-bottom: rem(32);
+}
+
+.cards-blog__item {
+  margin-bottom: rem(61);
+}
+
+.cards-blog__item:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+

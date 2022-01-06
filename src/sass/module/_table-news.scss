@@ -1,0 +1,32 @@
+.table-news {
+}
+
+.table-news__list {
+  border-top:1px solid #808080 ;
+}
+
+.table-news__body {
+  border-bottom:1px solid #808080 ;
+  display: flex;
+  line-height: rem(63);
+}
+
+.table-news__link:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.table-news__body time {
+  font-size: rem(16);
+  color: $base; 
+  font-weight: normal;
+  width: rem(137);
+}
+
+.table-news__title {
+  line-height: rem(63);
+  font-size: rem(16);
+  color: $base;
+  flex: 1;
+  text-decoration:  underline;
+}

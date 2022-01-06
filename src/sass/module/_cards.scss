@@ -1,0 +1,13 @@
+.cards {
+
+}
+
+.cards__item {
+  display: block;
+  background: $white;
+  margin-bottom: rem(24);
+}
+
+.cards__item:hover {
+  opacity: 0.6;
+}

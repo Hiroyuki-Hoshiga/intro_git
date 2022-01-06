@@ -1,0 +1,70 @@
+.home-lead {
+  background-color: $base;
+}
+
+.home-lead__inner {
+  text-align: center;
+  padding-bottom: rem(49);
+}
+
+.home-lead__heading {
+  padding-top: rem(54);
+  margin-bottom: rem(44);
+}
+.home-lead__heading p {
+  font-size: rem(36);
+  font-weight: bold;
+  color:$white;
+}
+.home-lead__heading p {
+  font-size: rem(36);
+  color:$white;
+}
+
+.home-lead__worries-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: rem(67);
+}
+
+.home-lead__worries-item {
+  margin-right: rem(57);
+}
+
+.home-lead__worries-item:last-child {
+  margin-right: rem(0);
+}
+
+.home-lead__worries-item p {
+  font-size: rem(18);
+  line-height: rem(39);
+  color: $white;
+}
+
+.home-lead__double-box {
+  border:1px solid $base;
+  border-top-width: 5px;border-right-width: 0px;border-bottom-width: 5px;border-left-width: 0px;
+  outline: 5px solid $base;
+  outline-offset: rem(-20);
+  padding:rem(25);
+  background: $white;
+}
+
+.home-lead__double-box h3 {
+  font-size: rem(36);
+  color: $base;
+  line-height: rem(50);
+  margin-bottom: rem(21);
+
+  span {
+    background:linear-gradient(transparent 75%, $accent 0%);
+
+  }
+}
+
+.home-lead__double-box p {
+  font-size: rem(18);
+  color: $base;
+  line-height: rem(31);
+  margin-bottom: rem(15);
+}

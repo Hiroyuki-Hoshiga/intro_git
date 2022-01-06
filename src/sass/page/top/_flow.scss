@@ -1,0 +1,69 @@
+.flow {
+  background: $white;
+  font-size: rem(16);
+}
+
+.flow__inner {
+  padding-top: rem(49);
+
+}
+
+.flow__heading {
+  font-size: rem(36);
+  color: $base;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: rem(42);
+}
+
+.flow__list {
+
+}
+
+.flow__item {
+  margin-bottom: rem(8);
+}
+
+.flow__item:last-child {
+  margin-bottom: rem(0);
+}
+
+dl {
+  display: flex;
+}
+
+dt {
+  font-size: rem(18);
+  color: $base;
+  background: #f8f8f8;
+  width: rem(280);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  
+  p {
+    border-right: 1px solid #C3C3C3;
+    width: rem(216);
+    padding-left: rem(21);
+  }
+  
+  span {
+    font-size: rem(16);
+    display: inline-block;
+    background: $accent;
+    width: rem(64);
+    text-align: center;
+    line-height: rem(64);
+    color: $white;
+  }
+}
+
+dd {
+  font-size: rem(16);
+  color: $base;
+  line-height: rem(64);
+  background: #f8f8f8;
+  flex: 1;
+  padding-left: rem(53);
+}
+

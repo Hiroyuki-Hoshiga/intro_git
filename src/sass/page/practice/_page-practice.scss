@@ -1,0 +1,111 @@
+.page-practice {
+  padding-top: rem(80);
+  margin-bottom: rem(123);
+}
+
+.page-practice__mv {
+  background-image: url(../../assets/images/home/plan.png);
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.page-practice__breadcrumbs {
+}
+
+.page-practice__inner {
+}
+
+//section-header
+.page-practice__section-header {
+  margin-top: rem(32);
+  margin-bottom: rem(32);
+}
+
+//section-header01
+.section-header01 {
+  text-align: center;
+}
+
+.section-header01 h2 {
+  position: relative;
+  font-size: rem(18);
+}
+
+.section-header01 span {
+  display: block;
+  font-size: rem(32);
+  font-weight: bold;
+  padding: 1.5rem;
+}
+
+.section-header01 h2:before {
+  position: absolute;
+  bottom: rem(-10);
+  left: calc(50% - rem(30));
+  width: rem(60);
+  height: rem(5);
+  content: '';
+  border-radius: rem(3);
+  background: #fa4141;
+}
+
+//section-header02
+.section-header02 {
+  text-align: center;
+}
+
+.section-header02 h2 {
+  font-size: rem(32);
+}
+
+.section-header02 h2 span {
+  font-size: rem(18);
+  display: block;
+}
+
+//section-header03
+.section-header03 {
+  text-align: center;
+}
+
+.section-header03 h2 {
+  font-size: rem(32);
+  position: relative;
+  padding: 1.5rem;
+}
+
+.section-header03 h2 span {
+  font-size: rem(18);
+  display: block;
+}
+
+.section-header03 h2:before {
+  position: absolute;
+  bottom: rem(-10);
+  left: calc(50% - rem(30));
+  width: rem(60);
+  height: rem(5);
+  content: '';
+  border-radius: rem(3);
+  background: #fa4141;
+}
+
+//section-header04
+.section-header04 {
+  text-align: center;
+}
+
+.section-header04 h2 {
+  font-size: rem(32);
+  color: $base;
+  margin-top: rem(-24);
+}
+
+.section-header04 span {
+  display: block;
+  font-size: rem(96);
+  color: $accent;
+  font-weight: bold;
+  line-height: 0.9;
+}

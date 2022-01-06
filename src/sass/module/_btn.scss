@@ -1,0 +1,69 @@
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: rem(14);
+  letter-spacing: rem(0);
+  color: $white;
+}
+
+.btn--header_accent {
+  width: rem(142);
+  line-height: rem(50);
+  border-radius: rem(5);
+  background: $accent;
+}
+
+.btn--header_base {
+  width: rem(137);
+  line-height: rem(50);
+  border-radius: rem(5);
+  background: $base;
+}
+
+.btn--mv {
+  width: rem(260);
+  height: rem(60);
+  font-size: rem(16);
+  line-height: rem(60);
+  border-radius: rem(31);
+  background: $accent;
+}
+
+.btn--price {
+  line-height: rem(50);
+  border-radius: rem(31);
+  background: transparent;
+  border: 1px solid $white;
+  width: rem(200);
+  font-size: rem(16);
+  height: rem(50);
+}
+
+.btn--contact {
+  width: rem(280);
+  height: rem(50);
+  font-size: rem(16);
+  line-height: rem(50);
+  font-weight: bold;
+  border-radius: rem(25);
+  background: $accent;
+}
+
+.btn--form {
+  width: rem(200);
+  line-height: rem(50);
+  border-radius: rem(5);
+  background: $base;
+  font-size: rem(16);
+}
+
+.block {
+  margin-top: rem(20);
+}
+.block80 {
+  margin-top: rem(80);
+  font-size: rem(16);
+  color: $base;
+}

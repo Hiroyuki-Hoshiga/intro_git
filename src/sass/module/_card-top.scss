@@ -1,0 +1,69 @@
+.card-top {
+  display: flex;
+}
+
+.card-top:hover {
+  cursor: pointer;
+}
+
+.card-top__image {
+  position: relative;
+}
+
+
+.card-top__image img {
+  width: rem(150);
+  height: rem(110);
+  object-fit: cover;
+}
+
+.card-top__cate {
+  position: absolute;
+  content: "";
+  font-size: rem(12);
+  color: $white;
+  top: rem(0);
+  left: rem(0);
+  background: $base;
+  width: rem(78);
+  height: rem(23);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #707070;
+  z-index: 10;
+}
+
+.card-top__body {
+  flex: 1;
+  font-size: rem(16);
+  padding-left: rem(20);
+  padding-right: rem(20);
+}
+
+.card-top__title {
+  font-size: rem(16);
+  letter-spacing: rem(0);
+  line-height: rem(27);
+  color: $base;
+  text-decoration: underline;
+}
+
+.card-top__date {
+  font-size: rem(12);
+  color: $base;
+  margin-top: auto;
+  margin-bottom: rem(16);
+}
+
+.card-top__title--blog {
+  font-size: rem(26);
+  margin-bottom: rem(16);
+}
+
+.card-top__date--blog {
+  font-size: rem(16);
+}
+
+

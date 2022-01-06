@@ -1,0 +1,17 @@
+.model {
+  background: $base;
+  font-size: rem(16);
+}
+
+.model__inner {
+  padding-top: rem(49);
+  padding-bottom: rem(60);
+}
+
+.model__heading {
+  font-size: rem(36);
+  color: $white;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: rem(120);
+}

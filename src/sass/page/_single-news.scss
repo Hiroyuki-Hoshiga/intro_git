@@ -1,0 +1,144 @@
+.single-news {
+    color: $base;
+}
+
+.single-news__inner {
+    padding-top: 51px;
+}
+
+.post-news {
+}
+
+.post-news__title {
+    margin-bottom: rem(37);
+}
+
+.post-news__main {
+    font-size: rem(28);
+    line-height: 1.7;
+}
+
+.post-news__info {
+    display: flex;
+    justify-content: right;
+    
+}
+.post-news__time {
+    font-size: 16px;
+    display: flex;
+  align-items: flex-end;
+  margin-bottom: -3px;
+}
+
+.entry-news {
+    flex: 1;
+}
+
+.entry-news__inner {
+    
+}
+
+.entry-news__body {
+    margin-top: rem(18);
+    padding-bottom: rem(49);
+    color: $base;
+
+    h2 {
+        margin-top: rem(52);
+        margin-bottom: rem(21);
+        font-size: rem(26);
+    }
+
+    h3 {
+        font-size: rem(22);
+        border-left: rem(4) solid $base;
+        padding-left: rem(10);
+        margin-top: rem(46);
+        margin-bottom: rem(26);
+        line-height: rem(28);
+    }
+
+    h4 {
+        font-size: rem(22);
+        margin-top: 20px;
+        margin-bottom: 20px;
+        @include mq("md") {
+            font-size: 26px;
+        }
+    }
+
+    a,p,ol,ul {
+        font-size: rem(16);
+    }
+
+    blockquote {
+        margin-top: rem(46);
+        margin-bottom: rem(28);
+        padding-top: rem(16);
+        padding-bottom: rem(0);
+        padding-left: rem(16);
+        padding-right: rem(16);
+        background: #f8f8f8;
+        display: flex;
+        
+        p {
+            position: relative;
+            margin-top: rem(7);
+        }
+          
+          &:before{ 
+            content:'“';
+            margin-right: rem(20);
+            font-size: rem(90);
+            line-height: 1;
+          }
+    }
+
+    a {
+        color: #f5a623;
+        text-decoration: underline;
+        @include mq("md") {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    p {
+        margin-top: rem(10);
+        margin-bottom: rem(10);
+    }
+
+    ul, ol {
+        padding: 0;
+        margin-top: rem(32);
+        margin-bottom: rem(54);
+      }
+      
+      ul li {
+        position: relative;
+        list-style-type: none!important;/*ポチ消す*/
+        vertical-align: middle;
+        border-radius: 15px 0px 0px 15px;/*左側の角丸く*/
+        line-height: 1.5;
+        margin-left: rem(46);
+        text-indent: rem(-32);
+      }
+      
+      ul li:before{ 
+        display:inline-block; 
+        vertical-align: middle;
+        /*以下白丸つくる*/
+        content:'';
+        width:11px;
+        height: 11px;
+        background: #f5a623;
+        border-radius: 50%;
+        margin-right: rem(21);
+      }
+      
+    figure {
+        margin: 0 0 0.5em;
+    }
+
+}

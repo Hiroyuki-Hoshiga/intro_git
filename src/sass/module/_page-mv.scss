@@ -1,0 +1,26 @@
+.page-mv {
+
+}
+
+.page-mv__inner {
+  position: relative;
+  width: 100%;
+  height: rem(221);
+ }
+
+.page-mv__copy {
+  width: 100%;
+  position: absolute;
+  z-index: 30;
+  text-align: center;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.page-mv__main-title {
+  color: $white;
+  font-size: rem(32);
+  line-height: rem(32);
+  font-weight: bold;
+}
+

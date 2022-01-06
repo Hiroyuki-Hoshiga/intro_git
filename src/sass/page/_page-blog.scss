@@ -1,0 +1,27 @@
+.page-blog {
+  padding-top: rem(80);
+}
+
+.page-blog__mv {
+  background-image: url(../../assets/images/home/blog.png);
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.page-blog__breadcrumbs {
+
+}
+
+.page-blog__inner {
+
+}
+
+.page-blog__header {
+  text-align: center;
+  font-size: rem(32);
+  margin-top: rem(50);
+  margin-bottom: rem(54);
+  color: $base;
+  font-weight: bold;
+}

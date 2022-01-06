@@ -1,0 +1,43 @@
+.page-price {
+  padding-top: rem(80);
+  margin-bottom: rem(123);
+}
+
+.page-price__mv {
+  background-image: url(../../assets/images/home/plan.png);
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.page-price__breadcrumbs {
+}
+
+.page-price__inner {
+}
+
+.page-price__header-charge {
+  text-align: center;
+  font-size: rem(32);
+  margin-top: rem(50);
+  margin-bottom: rem(54);
+  color: $base;
+  font-weight: bold;
+}
+
+.page-price__header-table {
+  text-align: center;
+  font-size: rem(32);
+  margin-top: rem(89);
+  margin-bottom: rem(54);
+  color: $base;
+  font-weight: bold;
+}
+.page-price__price-system {
+  margin-bottom: rem(40);
+}
+
+.page-price__price-table {
+  margin-top: rem(100);
+  margin-bottom: rem(40);
+}

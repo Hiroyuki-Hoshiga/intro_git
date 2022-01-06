@@ -1,0 +1,46 @@
+.cta {
+}
+
+.cta__billboard {
+  padding-top: 20.03125%;
+  background-image: url(../../assets/images/home/cta.png);
+ }
+
+.cta__body {
+}
+
+.cta__info {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  font-size: rem(16);
+  height: rem(80);
+}
+
+.cta__text {
+  flex: 1;
+  font-size: rem(16);
+  color: $base;
+  margin-right: rem(20);
+  text-align: right;
+}
+.cta__tel {
+  line-height: rem(79);
+  font-size: rem(36);
+  color: $base;
+  margin-right: rem(20);
+  width: rem(260);
+  text-align: center;
+  font-weight: bold;
+}
+.cta__bussiness-hour {
+  flex: 1;
+  font-size: rem(16);
+  color: $base;
+  text-align-last: left;
+  font-weight: normal;
+
+  span {
+    margin-left: rem(8);
+  }
+}

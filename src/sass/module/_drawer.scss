@@ -1,0 +1,94 @@
+/* チェックボックスは非表示に */
+.drawer__hidden {
+  display: none;
+}
+
+/* ハンバーガーアイコンの設置スペース */
+.drawer__open {
+  display: flex;
+  height: rem(40);
+  width: rem(68);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;/* 重なり順を一番上に */
+  cursor: pointer;
+  padding-bottom: 11px;
+}
+
+/* ハンバーガーメニューのアイコン */
+.drawer__open span,
+.drawer__open span:before,
+.drawer__open span:after {
+  content: '';
+  display: block;
+  height: rem(2);
+  width: rem(26);
+  border-radius: rem(2);
+  background: #fff;
+  transition: 0.5s;
+  position: absolute;
+}
+
+/* 三本線のうち一番上の棒の位置調整 */
+.drawer__open span:before {
+  bottom: rem(6.5);
+}
+
+/* 三本線のうち一番下の棒の位置調整 */
+.drawer__open span:after {
+  top: rem(6.5);
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer-check:checked ~ .drawer-open span {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer-check:checked ~ .drawer-open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+#drawer-check:checked ~ .drawer-open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+  
+/* メニューのデザイン*/
+.drawer__content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;/* メニューを画面の外に飛ばす */
+  z-index: 50;
+  background: #000;
+  transition: .5s;
+  text-align: center;
+}
+
+.drawer__inner {
+  position: relative;
+  height: 100%;
+}
+
+.drawer__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.drawer__item {
+  font-size: rem(16);
+  line-height: rem(16);
+  color: white;
+  margin-bottom: rem(32);
+}
+
+/* アイコンがクリックされたらメニューを表示 */
+#drawer-check:checked ~ .drawer__content {
+  left: 0;/* メニューを画面に入れる */
+}

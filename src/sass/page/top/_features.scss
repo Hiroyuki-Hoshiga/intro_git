@@ -1,0 +1,19 @@
+.features {
+  background-color: $white;
+  margin-bottom: rem(93);
+}
+
+.features__inner {
+}
+
+.features__heading {
+  padding-top: rem(50);
+  margin-bottom: rem(48);
+}
+
+.features__heading p {
+  font-size: rem(36);
+  color:$base;
+  font-weight: bold;
+  text-align: center;
+}

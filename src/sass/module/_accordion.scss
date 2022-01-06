@@ -1,0 +1,87 @@
+.accordion {
+  margin-top: 10px;
+}
+
+.accordion-container {
+}
+
+.accordion-title {
+  border-top: 1px solid #010327;
+  color: $base;
+  font-size: rem(16);
+  font-weight: normal;
+  padding: rem(25) rem(12) rem(24) rem(0);
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.accordion-title:last-of-type {
+  border-bottom: 1px solid #010327;
+}
+
+.accordion-title::before, .accordion-title::after {
+  content: '';
+  display: block;
+  background-color: #010327;
+  position: absolute;
+  top: 48%;
+  width: 25px;
+  height: 3px;
+  right: 20px;
+}
+
+.accordion-title::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.accordion-title:hover,
+.accordion-title:active,
+.accordion-title.is-active {
+}
+
+.accordion-title.is-active::before {
+  opacity: 0;
+}
+
+.accordion-title.is-active::after {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.accordion-content {
+  font-size: rem(16);
+  color: $base;
+  background: #f8f8f8;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  padding: rem(0) rem(0);
+  line-height: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.accordion-content.is-open {
+  background-color: #f8f8f8;
+  padding: rem(20) rem(25);
+  margin-top: rem(-8);
+  margin-bottom: rem(17);
+  line-height: normal;
+  /* numberに書き換える*/
+  height: auto;
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */
+
+
+
+

@@ -1,0 +1,22 @@
+.cards-model {
+  
+  @include mq("md") {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+.cards-model__item {
+  display: block;
+
+  @include mq("md") {
+    margin-right: rem(30);
+    max-width: rem(280);
+    width: calc(100% / 3 - 0rem);
+
+    &:nth-child(3n) {
+      margin-right: rem(0);
+    }
+  }
+}

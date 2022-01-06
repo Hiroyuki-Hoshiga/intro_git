@@ -1,0 +1,17 @@
+.page-contact {
+  margin-top: rem(80);
+}
+
+.page-contact__mv {
+  background-image: url(../../assets/images/contact/contact-page-mv.jpg);
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  @include mq("md") {
+    background-image: url(../../assets/images/home/cta.png);
+  }
+}
+
+.page-contact__inner {
+}

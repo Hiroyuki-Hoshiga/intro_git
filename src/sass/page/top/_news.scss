@@ -1,0 +1,51 @@
+/* news */
+.news {
+  width: 50%;
+  font-size: rem(16);
+}
+
+.news__inner {
+  padding-left: rem(48);
+}
+
+.news__header {
+  font-size: rem(32);
+  color: $base;
+  margin-bottom: rem(20);
+}
+
+.news__body {
+  
+}
+
+.news__list {
+  
+}
+
+.news__item {
+  background: $white;
+  margin-bottom: rem(49);
+}
+
+.news__item:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.news__info {
+  margin-bottom: rem(7);
+
+  time {
+    font-size: rem(12);
+    color: $base; 
+  }
+}
+
+.news__title {
+  font-size: rem(16);
+  letter-spacing: rem(0);
+  line-height: 1.5;
+  color: $base;
+  flex: 1;
+  text-decoration:  underline;
+}

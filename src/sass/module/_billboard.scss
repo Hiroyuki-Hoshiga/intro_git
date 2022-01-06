@@ -1,0 +1,55 @@
+.billboard {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 37.1875%;
+  background-image: url(../../assets/images/home/fv.png);
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.billboard__copy {
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.billboard__main {
+  color: $white;
+  font-size: rem(48);
+  line-height: rem(48);
+  font-weight: bold;
+  margin-bottom: rem(22);
+  margin-top: rem(38);
+  text-shadow: 0px 3px 6px #00000029;
+}
+
+.billboard__main--small {
+  font-size: rem(32);
+  margin-bottom: rem(0);
+}
+
+.billboard__sub {
+  color: $white;
+  font-size: rem(18);
+  line-height: rem(31);
+  margin-bottom: rem(12);
+  font-weight: normal;
+}
+.billboard__btn {
+  margin-bottom: rem(16);
+
+}
+.billboard__contact {
+  font-size: rem(18);
+}
+.billboard__contact a {
+  color: $white;
+  font-size: rem(16);
+  line-height: rem(27);
+  text-decoration: underline;
+}

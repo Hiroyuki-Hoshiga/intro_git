@@ -1,0 +1,66 @@
+
+
+.card-model__copy {
+  font-size: rem(16);
+  font-weight: bold;
+  line-height: rem(29);
+  margin-bottom: rem(6);
+  color: $white;
+  
+  @include mq("md") {
+    margin-bottom: rem(6);
+  }
+}
+
+.card-model__image {
+  position: relative;
+  background: $white;
+  height: rem(171);
+}
+
+.card-model__image img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+.card-model__body {
+  
+}
+
+.card-model__title {
+  display: flex;
+  margin-top: rem(16);
+  margin-bottom: rem(10);
+  font-weight: normal;
+}
+
+.card-model__occupation {
+  width: rem(100);
+  color: $base;
+  background: $white;
+  font-size: rem(16);
+  line-height: rem(32);
+  padding-left: rem(10);
+  margin-right: rem(8);
+}
+
+.card-model__name {
+  flex: 1;
+  color: $base;
+  background: $white;
+  font-size: rem(16);
+  line-height: rem(32);
+  padding-left: rem(13);
+}
+
+.card-model__score {
+  color: $base;
+  background: $white;
+  font-size: rem(16);
+  line-height: rem(32);
+  padding-left: rem(13);
+}
+

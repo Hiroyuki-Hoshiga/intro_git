@@ -1,0 +1,38 @@
+.thanks {
+  background-color: #111;
+}
+.thanks__inner {
+  color: #fff;
+  text-align: center;
+  margin-top: rem(130);
+  @include mq("md") {
+    max-width: rem(1140);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: rem(20);
+    padding-right: rem(20);
+    margin-top: rem(240);
+  }
+}
+.thanks__heading {
+  color: #fff;
+  font-size: rem(16);
+  margin-bottom: rem(80);
+  letter-spacing: rem(2);
+  @include mq("md") {
+    font-size: rem(30);
+  }
+}
+.thanks__text {
+  color: #fff;
+  font-size: rem(16);
+  letter-spacing: rem(2);
+  @include mq("md") {
+    font-size: rem(30);
+    margin-bottom: rem(80);
+    br {
+      display: none;
+    }
+  }
+}
+

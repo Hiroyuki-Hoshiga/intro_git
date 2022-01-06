@@ -1,0 +1,31 @@
+.archive-news {
+  padding-top: rem(80);
+}
+
+.archive-news__mv {
+  background-image: url(../../assets/images/home/news.png);
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.archive-news__breadcrumbs {
+}
+
+.archive-news__inner {
+}
+
+.archive-news__header {
+  text-align: center;
+  font-size: rem(32);
+  margin-top: rem(50);
+  margin-bottom: rem(39);
+  color: $base;
+  font-weight: bold;
+}
+
+.archive-news__pagination {
+  margin-top: rem(70);
+  margin-bottom: rem(45);
+}
+

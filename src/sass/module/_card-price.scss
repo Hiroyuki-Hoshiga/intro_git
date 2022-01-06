@@ -1,0 +1,82 @@
+.card-price {
+  width: 25%;
+  height: rem(474);
+}
+.card-price__header {
+  position: relative;
+  font-size: rem(16);
+  line-height: rem(60);
+  color: $white;
+  background: $base;
+}
+
+.card-price__body {
+  padding-left: rem(20);
+  padding-right: rem(20);
+  border-left: 0.5px solid $base;
+  border-right: 0.5px solid $base;
+  border-bottom: 0.5px solid $base;
+  height: inherit;
+}
+
+.card-price__main {
+  padding-top: rem(24);
+  margin-bottom: rem(42);
+}
+
+.card-price__charge {
+  color: $base;
+  background: $white;
+  font-size: rem(25);
+  line-height: rem(40);
+  font-weight: bold;
+}
+
+.card-price__monthly {
+  color: $base;
+  font-size: rem(16);
+  line-height: rem(27);
+}
+
+.card-price__check {
+  color: $base;
+  font-size: rem(16);
+  line-height: rem(27);
+}
+
+.card-price__check p {
+  margin-bottom: rem(8);
+}
+
+.fa-check::before {
+  content: "\f00c";
+  margin-right: rem(8);
+}
+
+.card-price--recommend {
+  
+  .card-price__header {
+    background: $accent;
+  }
+
+  .card-price__header::before {
+    content: 'おすすめ';
+    position: absolute;
+    top: rem(-36);
+    right: rem(0);
+    font-size: rem(16);
+    width: 100%;
+    color: $white;
+    background: $accent;
+    padding-top: rem(16);
+    line-height: rem(24);
+  }
+
+  .card-price__body {
+    .card-price__main {
+      .card-price__charge {
+        color: $accent;
+      }
+    }
+  }
+}

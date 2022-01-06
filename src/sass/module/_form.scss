@@ -1,0 +1,146 @@
+.form {
+  font-size: rem(16);
+  color: $base;
+}
+
+.form__thanks {
+  text-align: center;
+}
+
+.form__home {
+  margin-top: rem(80);
+  text-align: center;
+}
+
+input, textarea, label {
+  font-size: rem(16);
+}
+
+input,textarea {
+  margin-top: rem(6);
+  margin-bottom: rem(16);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  border: 1px solid $base ;
+  width: 100%;
+  padding: rem(10);
+}
+
+textarea {
+  border: 1px solid $base ;
+  width: 100%;
+  padding: rem(16);
+  height: 15em;
+
+}
+
+.radio {
+  label {
+  }
+}
+
+.radio-input {
+}
+
+.radio-input{
+  display: none;
+}
+.radio-input + span{
+  padding-left: 40px;
+  position:relative;
+  line-height: rem(29);
+}
+.radio-input + span::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2.5px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #707070;
+  border-radius: 50%;
+}
+.radio-input:checked + span{
+  color: $base;
+}
+.radio-input:checked + span::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background: $base;
+  border-radius: 50%;
+}
+
+.checkbox {
+  text-align: center;
+  padding-left: rem(52);
+  a {
+    text-decoration: underline;
+  }
+}
+
+.checkbox-input{
+  display: none;
+}
+.checkbox-parts{
+  padding-left: 20px;
+  position:relative;
+  margin-right: 10px;
+}
+.checkbox-parts::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #707070;
+}
+.checkbox-input:checked{
+  color: $base;
+}
+.checkbox-input:checked::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid $base;
+  border-right: 3px solid $base;
+}
+
+.form-button {
+  text-align: center;
+}
+
+.block41 {
+  margin-top: rem(41);
+}
+.block4 {
+  margin-top: rem(4);
+}
+.block12 {
+  margin-top: rem(12);
+}
+
+.block3 {
+  margin-top: rem(3);
+}
+.block20 {
+  margin-top: rem(20);
+}
+.block36 {
+  margin-top: rem(36);
+}
