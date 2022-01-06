@@ -196,6 +196,10 @@ select::-ms-expand {
   margin-top: 10px;
 }
 
+.accordion-container {
+  border-bottom: 1px solid #010327;
+}
+
 .accordion-title {
   border-top: 1px solid #010327;
   color: #1B224C;
@@ -210,10 +214,6 @@ select::-ms-expand {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-.accordion-title:last-of-type {
-  border-bottom: 1px solid #010327;
 }
 
 .accordion-title::before, .accordion-title::after {
@@ -3807,6 +3807,7 @@ dd {
       -ms-flex: 1;
           flex: 1;
   text-decoration: underline;
+  font-weight: normal;
 }
 
 .post {

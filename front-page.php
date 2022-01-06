@@ -68,7 +68,7 @@
             <img class="media__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/feature02.png" alt="">
           </figure>
         </li>
-        <li class=" medias__item media">
+        <li class="medias__item media">
           <div class="media__body">
             <div class="media__desc">
               <div class="media__label">特長 ３</div>
@@ -268,8 +268,12 @@
                   <div class="card-top__image">
                     <?php the_post_thumbnail('thumbside'); ?>
                     <div class="card-top__cate">
-                      <?php $terms = wp_get_object_terms($post->ID,'works_cate'); foreach($terms as $term){echo $term->name . '';} ?>
-                      カテゴリー
+                    <?php
+                       $cat = get_the_category();
+                       $catname = $cat[0]->cat_name;//カテゴリー名
+                       $catslug = $cat[0]->slug;// スラッグ名
+                     ?>
+                     <span class="<?php echo $catslug; ?>"><?php echo $catname; ?></span>
                     </div>
                   </div>
                   <div class="card-top__body">

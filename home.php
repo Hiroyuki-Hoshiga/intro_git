@@ -30,9 +30,13 @@
             <div class="card-blog__image">
               <?php the_post_thumbnail('thumbside'); ?>
               <div class="card-blog__cate">
-                <?php $terms = wp_get_object_terms($post->ID,'works_cate'); foreach($terms as $term){echo $term->name . '';} ?>
-                カテゴリー
-              </div><!-- カテゴリー要修正 -->
+                <?php
+                  $cat = get_the_category();
+                  $catname = $cat[0]->cat_name;//カテゴリー名
+                  $catslug = $cat[0]->slug;// スラッグ名
+                ?>
+                <span class="<?php echo $catslug; ?>"><?php echo $catname; ?></span>
+              </div>
             </div>
             <div class="card-blog__body">
               <div class="card-blog__info">
