@@ -16,8 +16,12 @@ input, textarea, label {
   font-size: rem(16);
 }
 
-input,textarea {
+input {
   margin-top: rem(6);
+  margin-bottom: rem(16);
+}
+textarea {
+  margin-top: rem(-25);
   margin-bottom: rem(16);
 }
 
@@ -34,10 +38,10 @@ textarea {
   width: 100%;
   padding: rem(16);
   height: 15em;
-
 }
 
 .radio {
+  margin-top: rem(-18);
   label {
   }
 }
