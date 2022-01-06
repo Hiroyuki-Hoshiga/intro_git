@@ -6,7 +6,6 @@
 <body>
   <?php get_template_part('nav-header'); ?>
 
-アッド用
   <div class="mv">
     <div class="mv__billboard billboard">
       <div class="billboard__inner">
