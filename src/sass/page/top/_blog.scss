@@ -1,6 +1,5 @@
 /* blog */
 .blog {
-  width: 50%;
 }
 
 .blog__inner {
@@ -10,6 +9,8 @@
   font-size: rem(32);
   color: $base;
   margin-bottom: rem(27);
+
+ 
 }
 
 .blog__body {
@@ -29,13 +30,4 @@
     margin-left: rem(0);
 
   }
-}
-
-.post {
-
-}
-
-.post__inner {
-  display: flex;
-
 }

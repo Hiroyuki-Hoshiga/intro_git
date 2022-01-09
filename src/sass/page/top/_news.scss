@@ -1,11 +1,13 @@
 /* news */
 .news {
-  width: 50%;
   font-size: rem(16);
 }
 
 .news__inner {
-  padding-left: rem(48);
+  padding-left: rem(0);
+  @include mq("md") {
+    padding-left: rem(48);
+  }
 }
 
 .news__header {

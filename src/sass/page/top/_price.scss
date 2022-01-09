@@ -3,6 +3,10 @@
 }
 
 .price__billboard-price {
-  padding-top: 24%;
+  padding-top: 75%;
   background-image: url(../../assets/images/home/price.png);
+  
+  @include mq("md") {
+    padding-top: 24%;
+  }
  }

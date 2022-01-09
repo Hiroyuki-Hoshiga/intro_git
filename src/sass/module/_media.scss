@@ -52,11 +52,12 @@
 
 }
 .media__title {
-  text-align: center;
+  text-align: left;
   color: $base;
   line-height: rem(39);
   letter-spacing: rem(0);
   margin-bottom: rem(27);
+  font-size: rem(24);
 
   @include mq("md") {
     text-align: left;

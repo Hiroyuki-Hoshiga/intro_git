@@ -38,8 +38,12 @@
 .card-top__body {
   flex: 1;
   font-size: rem(16);
-  padding-left: rem(20);
-  padding-right: rem(20);
+  padding-left: rem(15);
+  padding-right: rem(0);
+  @include mq("md") {
+    padding-left: rem(20);
+    padding-right: rem(20);
+  }
 }
 
 .card-top__title {

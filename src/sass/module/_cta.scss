@@ -2,19 +2,31 @@
 }
 
 .cta__billboard {
-  padding-top: 20.03125%;
+  padding-top: 75%;
   background-image: url(../../assets/images/home/cta.png);
+  
+  @include mq("md") {
+    padding-top: 20.03125%;
+   
+  }
  }
 
 .cta__body {
 }
 
 .cta__info {
-  display: flex;
+  display: block;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   font-size: rem(16);
-  height: rem(80);
+  height: rem(120);
+  padding-top: rem(16);
+  @include mq("md") {
+    align-items: baseline;
+    display: flex;
+    height: rem(80);
+    padding-top: rem(0);
+  }
 }
 
 .cta__text {
@@ -22,24 +34,33 @@
   font-size: rem(16);
   color: $base;
   margin-right: rem(20);
-  text-align: right;
+  text-align: center;
+  @include mq("md") {
+    text-align: right;
+  }
 }
 .cta__tel {
-  line-height: rem(79);
+  line-height: rem(48);
   font-size: rem(36);
   color: $base;
   margin-right: rem(20);
-  width: rem(260);
   text-align: center;
   font-weight: bold;
+  @include mq("md") {
+    width: rem(260);
+    line-height: rem(79);
+  }
 }
 .cta__bussiness-hour {
   flex: 1;
   font-size: rem(16);
   color: $base;
-  text-align-last: left;
+  text-align-last: center;
   font-weight: normal;
-
+  
+  @include mq("md") {
+    text-align-last: left;
+  }
   span {
     margin-left: rem(8);
   }

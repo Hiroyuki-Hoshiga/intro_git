@@ -12,8 +12,11 @@
 }
 
 .features__heading p {
-  font-size: rem(36);
+  font-size: rem(28);
   color:$base;
   font-weight: bold;
   text-align: center;
+  @include mq("md") {
+    font-size: rem(36);
+  }
 }

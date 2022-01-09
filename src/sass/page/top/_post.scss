@@ -5,4 +5,16 @@
 .post__inner {
   padding-top: rem(83);
   margin-bottom: rem(88);
+  display: block;
+  
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.post__blog {
+  width: 50%;
+}
+.post__news {
+  width: 50%;
 }

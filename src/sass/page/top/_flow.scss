@@ -17,11 +17,21 @@
 }
 
 .flow__list {
-
+  
 }
 
 .flow__item {
   margin-bottom: rem(8);
+  display: flex;
+  span {
+    font-size: rem(16);
+    display: inline-block;
+    background: $accent;
+    width: rem(64);
+    text-align: center;
+    line-height: rem(64);
+    color: $white;
+  }
 }
 
 .flow__item:last-child {
@@ -29,7 +39,17 @@
 }
 
 dl {
-  display: flex;
+  display: block;
+  background: #f8f8f8;
+  padding-top: rem(16);
+  padding-bottom: rem(16);
+  padding-right: rem(16);
+  @include mq("md") {
+    display: flex;
+    padding-top: rem(0);
+    padding-bottom: rem(0);
+    padding-right: rem(0);
+  }
 }
 
 dt {
@@ -42,28 +62,26 @@ dt {
   align-items: center;
   
   p {
-    border-right: 1px solid #C3C3C3;
     width: rem(216);
     padding-left: rem(21);
+    @include mq("md") {
+      display: flex;
+      border-right: 1px solid #C3C3C3;
+    }
   }
   
-  span {
-    font-size: rem(16);
-    display: inline-block;
-    background: $accent;
-    width: rem(64);
-    text-align: center;
-    line-height: rem(64);
-    color: $white;
-  }
 }
 
 dd {
   font-size: rem(16);
   color: $base;
-  line-height: rem(64);
+  line-height: rem(32);
   background: #f8f8f8;
   flex: 1;
-  padding-left: rem(53);
+  padding-left: rem(21);
+  @include mq("md") {
+    line-height: rem(64);
+    padding-left: rem(53);
+  }
 }
 

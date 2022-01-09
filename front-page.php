@@ -21,18 +21,18 @@
     </div>
   </div>
 
-
   <div class="home-lead">
     <div class="home-lead__inner l-inner">
-      <div class="home-lead__heading"><p>TOEFL学習でこんな悩みありませんか？</p></div>
+      <div class="home-lead__heading"><p>TOEFL学習で<br>こんな悩みありませんか？</p></div>
       <ul class="home-lead__worries-list">
-        <li class="home-lead__worries-item"><p>勉強の習慣が<br>身についていない</p> </li>
-        <li class="home-lead__worries-item"><p>勉強しているはず<br>なのに点数が伸びない</p> </li>
-        <li class="home-lead__worries-item"><p>正しい勉強方法が<br>わからない</p> </li>
+        <li class="home-lead__worries-item"><p>勉強の習慣が<br>身についていない</p></li>
+        <li class="home-lead__worries-item"><p>勉強しているはず<br>なのに点数が伸びない</p></li>
+        <li class="home-lead__worries-item"><p>正しい勉強方法が<br>わからない</p></li>
       </ul>
       <div class="home-lead__double-box">
         <h3>Engressは<br><span>TOEFLに特化したスクール</span>です</h3>
-        <p>完全オーダーメイドで、１人１人の悩みに合わせた最適な指導で<br>TOEFLの苦手分野を克服します。</p>
+        <p>完全オーダーメイドで、<br>１人１人の悩みに合わせた最適な指導で</p>
+        <p>TOEFLの苦手分野を克服します。</p>
       </div>
     </div>
   </div>
@@ -202,90 +202,94 @@
   </section>
 
 
-  <section class="flow">
-    <div class="flow__inner l-inner">
-      <div class="flow__heading"><p>ご利用の流れ</p></div>
-      <ul class="flow__list">
-        <li class="flow__item">
-          <dl>
-            <dt><span>01</span><p>お問い合わせ</p></dt>
-            <dd>まずはフォームまたはお電話からお申し込みください。</dd>
-          </dl>
-        </li>
-        <li class="flow__item">
-          <dl>
-            <dt><span>02</span><p>ヒアリング</p></dt>
-            <dd>現在の学習状況やTOEFLスコア、目標のスコアをお聞きします。</dd>
-          </dl>
-        </li>
-        <li class="flow__item">
-          <dl>
-            <dt><span>03</span><p>学習プランのご提供</p></dt>
-            <dd>目標達成のために最適な学習プランをご提案致します。</dd>
-          </dl>
-        </li>
-        <li class="flow__item">
-          <dl>
-            <dt><span>04</span><p>ご入会</p></dt>
-            <dd>お申込み完了後、レッスンがスタートします。</dd>
-          </dl>
-        </li>
-      </ul>
-    </div>
-  </section>
+<section class="flow">
+  <div class="flow__inner l-inner">
+    <div class="flow__heading"><p>ご利用の流れ</p></div>
+    <ul class="flow__list">
+      <li class="flow__item">
+        <span>01</span>
+        <dl>
+          <dt><p>お問い合わせ</p></dt>
+          <dd>まずはフォームまたはお電話からお申し込みください。</dd>
+        </dl>
+      </li>
+      <li class="flow__item">
+        <span>02</span>
+        <dl>
+          <dt><p>ヒアリング</p></dt>
+          <dd>現在の学習状況やTOEFLスコア、目標のスコアをお聞きします。</dd>
+        </dl>
+      </li>
+      <li class="flow__item">
+        <span>03</span>
+        <dl>
+          <dt><p>学習プランのご提供</p></dt>
+          <dd>目標達成のために最適な学習プランをご提案致します。</dd>
+        </dl>
+      </li>
+      <li class="flow__item">
+        <span>04</span>
+        <dl>
+          <dt><p>ご入会</p></dt>
+          <dd>お申込み完了後、レッスンがスタートします。</dd>
+        </dl>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="faq__inner l-inner">
+    <div class="faq__heading"><p>よくある質問</p></div>
+    <div class="faq__accordion accordion">
+      <div class="accordion-container">
+        <h4 class="accordion-title jsAccordionTitle">Engressはサラリーマンでも学習を続けられるでしょうか？</h4>
+        <div class="accordion-content">Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。</div>
+        <h4 class="accordion-title jsAccordionTitle">教材はオリジナルのものを使用しているのでしょうか？</h4>
+        <div class="accordion-content">ここにアコーディオンの内容が入ります。改行されてもボックスは自動的に拡張されます。</div>
+        <h4 class="accordion-title jsAccordionTitle">講師に日本人はいますか？</h4>
+        <div class="accordion-content">ここにアコーディオンの内容が入ります。改行されてもボックスは自動的に拡張されます。</div>
+        <h4 class="accordion-title jsAccordionTitle">TOEFL以外の海外大学合格のサポートもしてもらえるのでしょうか？</h4>
+        <div class="accordion-content">ここにアコーディオンの内容が入ります。改行されてもボックスは自動的に拡張されます。</div>
+      </div><!-- accordion__container -->
+    </div><!-- /.accordion -->
+  </div><!-- /.faq__inner -->
+</section>
   
-  <section class="faq">
-    <div class="faq__inner l-inner">
-      <div class="faq__heading"><p>よくある質問</p></div>
-      <div class="faq__accordion accordion">
-        <div class="accordion-container">
-          <h4 class="accordion-title jsAccordionTitle">Engressはサラリーマンでも学習を続けられるでしょうか？</h4>
-          <div class="accordion-content">Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。</div>
-          <h4 class="accordion-title jsAccordionTitle">教材はオリジナルのものを使用しているのでしょうか？</h4>
-          <div class="accordion-content">ここにアコーディオンの内容が入ります。改行されてもボックスは自動的に拡張されます。</div>
-          <h4 class="accordion-title jsAccordionTitle">講師に日本人はいますか？</h4>
-          <div class="accordion-content">ここにアコーディオンの内容が入ります。改行されてもボックスは自動的に拡張されます。</div>
-          <h4 class="accordion-title jsAccordionTitle">TOEFL以外の海外大学合格のサポートもしてもらえるのでしょうか？</h4>
-          <div class="accordion-content">ここにアコーディオンの内容が入ります。改行されてもボックスは自動的に拡張されます。</div>
-        </div><!-- accordion__container -->
-      </div><!-- /.accordion -->
-    </div><!-- /.faq__inner -->
-  </section>
-    
-    
-    <section class="post">
-      <div class="post__inner l-inner">
-        <div class="blog">
-          <div class="blog__inner">
-            <h2 class="blog__header section-header">ブログ</h2>
-            <div class="blog__body">
-              <div class="cards-top">
-                <?php
-                $infoPosts = get_posts('numberposts=3');
-                foreach($infoPosts as $post):
-                ?>
-                <a class="cards-top__item card-top" href="<?php the_permalink(); ?>">
-                  <div class="card-top__image">
-                    <?php the_post_thumbnail('thumbside'); ?>
-                    <div class="card-top__cate">
-                    <?php
-                       $cat = get_the_category();
-                       $catname = $cat[0]->cat_name;//カテゴリー名
-                       $catslug = $cat[0]->slug;// スラッグ名
-                     ?>
-                     <span class="<?php echo $catslug; ?>"><?php echo $catname; ?></span>
-                    </div>
+  
+  <section class="post">
+    <div class="post__inner l-inner">
+      <div class="blog">
+        <div class="blog__inner">
+          <h2 class="blog__header section-header">ブログ</h2>
+          <div class="blog__body">
+            <div class="cards-top">
+              <?php
+              $infoPosts = get_posts('numberposts=3');
+              foreach($infoPosts as $post):
+              ?>
+              <a class="cards-top__item card-top" href="<?php the_permalink(); ?>">
+                <div class="card-top__image">
+                  <?php the_post_thumbnail('thumbside'); ?>
+                  <div class="card-top__cate">
+                  <?php
+                      $cat = get_the_category();
+                      $catname = $cat[0]->cat_name;//カテゴリー名
+                      $catslug = $cat[0]->slug;// スラッグ名
+                    ?>
+                    <span class="<?php echo $catslug; ?>"><?php echo $catname; ?></span>
                   </div>
-                  <div class="card-top__body">
-                    <h3 class="card-top__title"><?php the_title(); ?></h3>
-                    <span class="card-top__date"><?php the_time( 'Y-m-d' ); ?></span>
-                  </div>
-                </a>
-                <?php endforeach; ?>
-              </div>
+                </div>
+                <div class="card-top__body">
+                  <h3 class="card-top__title"><?php the_title(); ?></h3>
+                  <span class="card-top__date"><?php the_time( 'Y-m-d' ); ?></span>
+                </div>
+              </a>
+              <?php endforeach; ?>
             </div>
           </div>
         </div>
+      </div>
       <div class="news">
         <div class="news__inner">
           <h2 class="news__header section-header">お知らせ</h2>
