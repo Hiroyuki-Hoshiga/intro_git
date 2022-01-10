@@ -48,7 +48,10 @@
   background: $accent;
   width: rem(90);
   line-height: rem(30);
-  margin-bottom: rem(30);
+  margin-bottom: rem(10);
+  @include mq("md") {
+    margin-bottom: rem(30);
+  }
 
 }
 .media__title {
@@ -56,12 +59,13 @@
   color: $base;
   line-height: rem(39);
   letter-spacing: rem(0);
-  margin-bottom: rem(27);
+  margin-bottom: rem(20);
   font-size: rem(24);
-
+  
   @include mq("md") {
     text-align: left;
     font-size: rem(26);
+    margin-bottom: rem(27);
   }
 }
 
@@ -70,4 +74,8 @@
   font-size: rem(16);
   line-height: rem(27);
   letter-spacing: rem(0);
+  margin-bottom: rem(20);
+  @include mq("md") {
+    margin-bottom: rem(0);
+  }
 }

@@ -87,7 +87,7 @@
 
 
   <section class="price">
-    <div class="price__inner l-inner">
+    <div class="price__inner">
       <div class="price__billboard-price billboard-price">
         <div class="billboard-price__copy">
           <h2 class="billboard-price__main">Engressの料金プランはこちら</h2>

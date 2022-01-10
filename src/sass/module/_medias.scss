@@ -3,6 +3,7 @@
 }
 
 .medias__item {
+  margin-bottom: rem(54);
 
   @include mq("md") {
     align-items: flex-start;

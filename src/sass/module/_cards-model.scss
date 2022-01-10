@@ -9,11 +9,13 @@
 
 .cards-model__item {
   display: block;
-
+  margin-bottom: rem(48);
+  
   @include mq("md") {
     margin-right: rem(30);
     max-width: rem(280);
     width: calc(100% / 3 - 0rem);
+    margin-bottom: rem(0);
 
     &:nth-child(3n) {
       margin-right: rem(0);

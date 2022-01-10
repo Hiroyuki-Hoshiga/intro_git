@@ -27,10 +27,13 @@
     font-size: rem(16);
     display: inline-block;
     background: $accent;
-    width: rem(64);
+    width: rem(74);
     text-align: center;
     line-height: rem(64);
     color: $white;
+    @include mq("md") {
+      width: rem(64);
+    }
   }
 }
 
@@ -44,6 +47,7 @@ dl {
   padding-top: rem(16);
   padding-bottom: rem(16);
   padding-right: rem(16);
+  flex: 1;
   @include mq("md") {
     display: flex;
     padding-top: rem(0);

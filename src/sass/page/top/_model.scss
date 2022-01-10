@@ -13,5 +13,8 @@
   color: $white;
   text-align: center;
   font-weight: bold;
-  margin-bottom: rem(120);
+  margin-bottom: rem(20);
+  @include mq("md") {
+    margin-bottom: rem(120);
+  }
 }
