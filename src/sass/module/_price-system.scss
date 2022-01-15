@@ -1,16 +1,24 @@
 .price-system {
-  display: flex;
-  padding-left: rem(115);
-  align-items: center;
+  display: block;
+  padding-left: rem(0);
+  text-align: center;
+  justify-content: center;
+  @include mq("md") {
+    display: flex;
+    padding-left: rem(115);
+  }
 }
 
 .price-system__admission-fee {
   color: $white;
   font-size: rem(22);
-  width: rem(280);
+  width: 100%;
   line-height: rem(90);
   background: $base;
   text-align: center;
+  @include mq("md") {
+    width: rem(280);
+  }
 }
 .price-system__plus {
   font-size: rem(50);
@@ -23,10 +31,13 @@
 .price-system__monthly-cost {
   color: $white;
   font-size: rem(22);
-  width: rem(280);
+  width: 100%;
   line-height: rem(90);
   background: $base;
   text-align: center;
+  @include mq("md") {
+    width: rem(280);
+  }
 }
 
 .price-system__text {

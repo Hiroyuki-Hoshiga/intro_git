@@ -510,16 +510,13 @@ select::-ms-expand {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.breadcrumbs__inner {
-  height: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.breadcrumbs__inner {
+  display: inline-block;
 }
 .breadcrumbs__inner a {
   text-decoration: underline;
@@ -646,9 +643,14 @@ select::-ms-expand {
 }
 
 .card-blog {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .card-blog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .card-blog:hover {
@@ -660,12 +662,16 @@ select::-ms-expand {
 }
 
 .card-blog__image img {
-  width: 240px;
-  width: 15rem;
-  height: 179px;
-  height: 11.1875rem;
+  width: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .card-blog__image img {
+    width: 15rem;
+    height: 11.1875rem;
+  }
 }
 
 .card-blog__cate {
@@ -673,14 +679,18 @@ select::-ms-expand {
   content: "";
   font-size: 12px;
   font-size: 0.75rem;
+  padding-left: 5px;
+  padding-left: 0.3125rem;
+  padding-right: 5px;
+  padding-right: 0.3125rem;
   color: #fff;
   top: 0px;
   top: 0rem;
   left: 0px;
   left: 0rem;
   background: #1B224C;
-  width: 80px;
-  width: 5rem;
+  min-width: 80px;
+  min-width: 5rem;
   height: 28px;
   height: 1.75rem;
   text-align: center;
@@ -703,8 +713,16 @@ select::-ms-expand {
           flex: 1;
   font-size: 16px;
   font-size: 1rem;
-  padding-left: 50px;
-  padding-left: 3.125rem;
+  padding-left: 0px;
+  padding-left: 0rem;
+  padding-top: 16px;
+  padding-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .card-blog__body {
+    padding-left: 3.125rem;
+    padding-top: 0rem;
+  }
 }
 
 .card-blog__title {
@@ -824,9 +842,14 @@ select::-ms-expand {
 }
 
 .card-price {
-  width: 25%;
+  width: 100%;
   height: 474px;
   height: 29.625rem;
+}
+@media screen and (min-width: 768px) {
+  .card-price {
+    width: 25%;
+  }
 }
 
 .card-price__header {
@@ -2521,26 +2544,37 @@ textarea {
 }
 
 .price-system {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 115px;
-  padding-left: 7.1875rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
+  padding-left: 0px;
+  padding-left: 0rem;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .price-system {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 7.1875rem;
+  }
 }
 
 .price-system__admission-fee {
   color: #fff;
   font-size: 22px;
   font-size: 1.375rem;
-  width: 280px;
-  width: 17.5rem;
+  width: 100%;
   line-height: 90px;
   line-height: 5.625rem;
   background: #1B224C;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .price-system__admission-fee {
+    width: 17.5rem;
+  }
 }
 
 .price-system__plus {
@@ -2558,12 +2592,16 @@ textarea {
   color: #fff;
   font-size: 22px;
   font-size: 1.375rem;
-  width: 280px;
-  width: 17.5rem;
+  width: 100%;
   line-height: 90px;
   line-height: 5.625rem;
   background: #1B224C;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .price-system__monthly-cost {
+    width: 17.5rem;
+  }
 }
 
 .price-system__text {
@@ -2575,16 +2613,26 @@ textarea {
 }
 
 .price-table__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .price-table__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .price-table__item {
   height: 413px;
   height: 25.8125rem;
-  margin-right: 8px;
-  margin-right: 0.5rem;
+  margin-right: 0px;
+  margin-right: 0rem;
+}
+@media screen and (min-width: 768px) {
+  .price-table__item {
+    margin-right: 0.5rem;
+  }
 }
 .price-table__item:last-child {
   margin-right: 0px;
@@ -2743,8 +2791,10 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  line-height: 63px;
-  line-height: 3.9375rem;
+  padding-top: 19px;
+  padding-top: 1.1875rem;
+  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 
 .table-news__link:hover {
@@ -2755,6 +2805,8 @@ textarea {
 .table-news__body time {
   font-size: 16px;
   font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem;
   color: #1B224C;
   font-weight: normal;
   width: 137px;
@@ -2762,8 +2814,8 @@ textarea {
 }
 
 .table-news__title {
-  line-height: 63px;
-  line-height: 3.9375rem;
+  line-height: 24px;
+  line-height: 1.5rem;
   font-size: 16px;
   font-size: 1rem;
   color: #1B224C;
@@ -3129,17 +3181,27 @@ textarea {
 }
 
 .columns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .columns__inner {
-  width: 70%;
+  width: 100%;
   max-width: 590px;
   max-width: 36.875rem;
   margin-right: 36px;
   margin-right: 2.25rem;
+}
+@media screen and (min-width: 768px) {
+  .columns__inner {
+    width: 70%;
+  }
 }
 
 .columns-post {
@@ -3170,15 +3232,23 @@ textarea {
 }
 
 .columns-post__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .columns-post__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .columns-post__time {
@@ -3198,7 +3268,12 @@ textarea {
 }
 
 .columns-side {
-  width: 30%;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .columns-side {
+    width: 30%;
+  }
 }
 
 .entry {
@@ -3917,13 +3992,17 @@ dd {
   margin-right: 0px;
   margin-right: 0rem;
 }
+@media screen and (min-width: 768px) {
+  .home-lead__worries-item {
+    margin-right: 3.5625rem;
+  }
+}
 .home-lead__worries-item br {
   display: none;
 }
 @media screen and (min-width: 768px) {
   .home-lead__worries-item br {
     display: block;
-    margin-right: 3.5625rem;
   }
 }
 

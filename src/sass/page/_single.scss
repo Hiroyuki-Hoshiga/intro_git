@@ -9,13 +9,19 @@
 }
 
 .columns {
-    display: flex;
+    display: block;
+    @include mq("md") {
+        display: flex;
+    }
 }
 
 .columns__inner {
-    width: 70%;
+    width: 100%;
     max-width: rem(590);
     margin-right: rem(36);
+    @include mq("md") {
+        width: 70%;
+    }
 }
 
 .columns-post {
@@ -42,9 +48,13 @@
 }
 
 .columns-post__info {
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
+    @include mq("md") {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .columns-post__social {
@@ -64,7 +74,10 @@
 }
 
 .columns-side {
-    width: 30%;
+    width: 100%;
+    @include mq("md") {
+        width: 30%;
+    }
 }
 
 .entry {

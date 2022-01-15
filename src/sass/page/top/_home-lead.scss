@@ -38,11 +38,13 @@
 
 .home-lead__worries-item {
   margin-right: rem(0);
+  @include mq("md") {
+    margin-right: rem(57);
+  }
   br {
     display: none;
     @include mq("md") {
       display: block;
-      margin-right: rem(57);
     }
   }
 }

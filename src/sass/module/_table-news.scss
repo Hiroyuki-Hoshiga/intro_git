@@ -8,7 +8,8 @@
 .table-news__body {
   border-bottom:1px solid #808080 ;
   display: flex;
-  line-height: rem(63);
+  padding-top: rem(19);
+  padding-bottom: rem(20);
 }
 
 .table-news__link:hover {
@@ -18,13 +19,14 @@
 
 .table-news__body time {
   font-size: rem(16);
+  line-height: rem(24);
   color: $base; 
   font-weight: normal;
   width: rem(137);
 }
 
 .table-news__title {
-  line-height: rem(63);
+  line-height: rem(24);
   font-size: rem(16);
   color: $base;
   flex: 1;

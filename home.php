@@ -28,7 +28,11 @@
         <?php if (have_posts()): while(have_posts()): the_post(); ?>
           <a class="cards-blog__item card-blog" href="<?php the_permalink(); ?>">
             <div class="card-blog__image">
-              <?php the_post_thumbnail('thumbside'); ?>
+              <?php if (has_post_thumbnail()) : ?>
+              <?php the_post_thumbnail(); ?>
+              <?php else: ?>
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/noimg.png" alt="">
+              <?php endif; ?>
               <div class="card-blog__cate">
                 <?php
                   $cat = get_the_category();
@@ -42,8 +46,26 @@
               <div class="card-blog__info">
                 <div class="card-blog__date"><?php the_time( 'Y-m-d' ); ?></div>
               </div>
-              <div class="card-blog__title"><?php the_title(); ?></div>
-              <div class="card-blog__copy">説明文が入ります。説明文が入ります。説明文が入ります。</div>
+              <div class="card-blog__title">
+                <?php //タイトルの文字数を30文字で制限
+                if ( mb_strlen( $post->post_title, 'UTF-8' ) > 30 ) {
+                  $title = mb_substr( $post->post_title, 0, 30, 'UTF-8' );
+                  echo $title . '…';
+                } else {
+                  echo $post->post_title;
+                }
+                ?>
+              </div>
+              <div class="card-blog__copy">
+                <?php //本文の文字数を100文字で制限
+                if ( mb_strlen( $post->post_content, 'UTF-8' ) > 100 ) {
+                  $content = str_replace( '\n', '', mb_substr( strip_tags( $post->post_content ), 0, 100, 'UTF-8' ) );
+                  echo $content . '…';
+                } else {
+                  echo str_replace( '\n', '', strip_tags( $post->post_content ) );
+                }
+                ?> 
+              </div>
             </div>
           </a>
         <?php endwhile; endif; ?>

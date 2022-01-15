@@ -50,11 +50,12 @@
     <div class="sp-global-menu" id="js-global-menu" area-hidden="true">
       <nav>
         <ul>
-          <li>リスト</li>
-          <li>リスト</li>
-          <li>リスト</li>
-          <li>リスト</li>
-          <li>リスト</li>
+          <li><a href="/">ホーム</a></li>
+            <li><a href="<?php bloginfo('url'); ?>/news/">お知らせ</a></li>
+            <li><a href="<?php bloginfo('url'); ?>/blog/">ブログ</a></li>
+            <li><a href="<?php bloginfo('url'); ?>/price/">コース・料金</a></li>
+            <li><a href="<?php bloginfo('url'); ?>/contact/">資料請求</a></li>
+          <li><a href="<?php bloginfo('url'); ?>/contact/">お問い合わせ</a></li>
         </ul>
       </nav>
     </div><!-- /.sp-header-menu -->

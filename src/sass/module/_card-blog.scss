@@ -1,5 +1,8 @@
 .card-blog {
-  display: flex;
+  display: block;
+  @include mq("md") {
+    display: flex;
+  }
 }
 
 .card-blog:hover {
@@ -11,20 +14,26 @@
 }
 
 .card-blog__image img {
-  width: rem(240);
-  height: rem(179);
+  width: 100%;
+  height: auto;
   object-fit: cover;
+  @include mq("md") {
+    width: rem(240);
+    height: rem(179);
+  }
 }
 
 .card-blog__cate {
   position: absolute;
   content: "";
   font-size: rem(12);
+  padding-left: rem(5);
+  padding-right: rem(5);
   color: $white;
   top: rem(0);
   left: rem(0);
   background: $base;
-  width: rem(80);
+  min-width: rem(80);
   height: rem(28);
   text-align: center;
   display: flex;
@@ -37,7 +46,12 @@
 .card-blog__body {
   flex: 1;
   font-size: rem(16);
-  padding-left: rem(50);
+  padding-left: rem(0);
+  padding-top: rem(16);
+  @include mq("md") {
+    padding-left: rem(50);
+    padding-top: rem(0);
+  }
 }
 
 .card-blog__title {

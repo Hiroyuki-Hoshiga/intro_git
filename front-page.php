@@ -41,6 +41,7 @@
   <section class="features">
     <div class="feaures__inner l-inner">
       <div class="features__heading"><p>TOEFL対策に特化したEngress3つの強み</p> </div>
+
       <ul class="features__medias medias">
       <li class=" medias__item media">
         <div class="media__body">
@@ -270,7 +271,12 @@
               ?>
               <a class="cards-top__item card-top" href="<?php the_permalink(); ?>">
                 <div class="card-top__image">
-                  <?php the_post_thumbnail('thumbside'); ?>
+                  <?php if (has_post_thumbnail()) : ?>
+                    <?php the_post_thumbnail(); ?>
+                  <?php else: ?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/noimg.png" alt="">
+                  <?php endif; ?>
+
                   <div class="card-top__cate">
                   <?php
                       $cat = get_the_category();
@@ -310,6 +316,14 @@
                 </div>
                 <h3 class="news__title">
                   <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                  <?php
+                  if(mb_strlen($post->post_title)>20) {
+                    $title= mb_substr($post->post_title,0,20) ;
+                      echo $title . '...';
+                    } else {
+                      echo $post->post_title;
+                    }
+                  ?>
                 </h3>
               </li>
               <?php endwhile; ?>
