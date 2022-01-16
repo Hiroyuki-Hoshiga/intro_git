@@ -12,9 +12,11 @@
         <div class="billboard__copy">
           <h2 class="billboard__main">TOEFL対策はEngress</h2>
           <h3 class="billboard__sub">日本人へのTOEFL指導歴豊かな講師陣の<br>コーチング型TOEFLスクール</h3>
-          <button class="billboard__btn btn btn--mv">資料請求</button>
+          <a class="" href="<?php bloginfo('url'); ?>/contact/">
+            <button class="billboard__btn btn btn--mv">資料請求</button>
+          </a>
           <div class="billboard__contact">
-            <a class="" href="">お問い合わせ</a>
+            <a class="" href="<?php bloginfo('url'); ?>/contact/">お問い合わせ</a>
           </div>
         </div>
       </div>
@@ -33,6 +35,7 @@
         <h3>Engressは<br><span>TOEFLに特化したスクール</span>です</h3>
         <p>完全オーダーメイドで、<br>１人１人の悩みに合わせた最適な指導で</p>
         <p>TOEFLの苦手分野を克服します。</p>
+        <div class="block15"></div>
       </div>
     </div>
   </div>
@@ -88,11 +91,13 @@
 
 
   <section class="price">
-    <div class="price__inner">
+    <div class="price__inner l-inner">
       <div class="price__billboard-price billboard-price">
         <div class="billboard-price__copy">
           <h2 class="billboard-price__main">Engressの料金プランはこちら</h2>
-          <button class="billboard-price__btn btn btn--price">料金を見てみる</button>
+          <a class="" href="<?php bloginfo('url'); ?>/contact/">
+            <button class="billboard-price__btn btn btn--price">料金を見てみる</button>
+          </a>
         </div>
       </div>
     </div>
@@ -260,7 +265,7 @@
   
   <section class="post">
     <div class="post__inner l-inner">
-      <div class="blog">
+      <div class="post__blog blog">
         <div class="blog__inner">
           <h2 class="blog__header section-header">ブログ</h2>
           <div class="blog__body">
@@ -296,7 +301,7 @@
           </div>
         </div>
       </div>
-      <div class="news">
+      <div class="post__news news">
         <div class="news__inner">
           <h2 class="news__header section-header">お知らせ</h2>
           <?php 
@@ -315,15 +320,16 @@
                   <time datetime="2020.07.20"><?php the_time( 'Y-m-d' ); ?></time>
                 </div>
                 <h3 class="news__title">
-                  <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                  <?php
-                  if(mb_strlen($post->post_title)>20) {
-                    $title= mb_substr($post->post_title,0,20) ;
-                      echo $title . '...';
-                    } else {
-                      echo $post->post_title;
-                    }
-                  ?>
+                  <a href="<?php the_permalink(); ?>">
+                    <?php
+                    if(mb_strlen($post->post_title)>30) {
+                      $title= mb_substr($post->post_title,0,30) ;
+                        echo $title . '...';
+                      } else {
+                        echo $post->post_title;
+                      }
+                    ?>
+                  </a>
                 </h3>
               </li>
               <?php endwhile; ?>

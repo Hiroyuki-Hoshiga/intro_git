@@ -1868,8 +1868,8 @@ input {
 }
 
 textarea {
-  margin-top: -25px;
-  margin-top: -1.5625rem;
+  margin-top: 6px;
+  margin-top: 0.375rem;
   margin-bottom: 16px;
   margin-bottom: 1rem;
 }
@@ -1891,6 +1891,7 @@ textarea {
   height: 15em;
 }
 
+/* ラジオボタン */
 .radio {
   margin-top: -18px;
   margin-top: -1.125rem;
@@ -1926,7 +1927,7 @@ textarea {
   content: "";
   display: block;
   position: absolute;
-  top: 4px;
+  top: 2px;
   left: 4px;
   width: 12px;
   height: 12px;
@@ -1943,43 +1944,55 @@ textarea {
   text-decoration: underline;
 }
 
-.checkbox-input {
+input[type=checkbox] {
+  /* デフォルトcheckボックス非表示*/
   display: none;
 }
 
-.checkbox-parts {
-  padding-left: 20px;
+.mwform-checkbox-field-text {
+  display: inline-block;
   position: relative;
-  margin-right: 10px;
+  padding: 0 0 0 36px;
+  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
-.checkbox-parts::before {
+.mwform-checkbox-field-text::before,
+.mwform-checkbox-field-text::after {
   content: "";
-  display: block;
   position: absolute;
-  top: 0;
-  left: 0;
+  display: block;
+}
+
+.mwform-checkbox-field-text::before {
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 2px;
   width: 20px;
   height: 20px;
-  border: 1px solid #707070;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
-.checkbox-input:checked {
-  color: #1B224C;
+.mwform-checkbox-field-text::after {
+  border-width: 3px;
+  border-color: transparent transparent #78a6e4 #78a6e4;
+  border-style: solid;
+  width: 20px;
+  height: 10px;
+  margin-top: -0.2em;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+  opacity: 0;
 }
 
-.checkbox-input:checked::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -2px;
-  left: 5px;
-  width: 7px;
-  height: 14px;
-  -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
-  border-bottom: 3px solid #1B224C;
-  border-right: 3px solid #1B224C;
+input[type=checkbox]:checked + .mwform-checkbox-field-text::after {
+  /* css擬似要素 :checked が付加されているときは表示  */
+  opacity: 1;
 }
 
 .form-button {
@@ -2004,6 +2017,11 @@ textarea {
 .block3 {
   margin-top: 3px;
   margin-top: 0.1875rem;
+}
+
+.block15 {
+  margin-top: 15px;
+  margin-top: 0.9375rem;
 }
 
 .block20 {
@@ -3171,6 +3189,12 @@ textarea {
 .entry-news__body figure {
   margin: 0 0 0.5em;
 }
+.entry-news__body img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: auto;
+  height: auto;
+}
 
 .single {
   color: #1B224C;
@@ -3463,57 +3487,27 @@ textarea {
   list-style: disc;
 }
 
-.thanks {
-  background-color: #111;
-}
-
 .thanks__inner {
-  color: #fff;
   text-align: center;
-  margin-top: 130px;
-  margin-top: 8.125rem;
-}
-@media screen and (min-width: 768px) {
-  .thanks__inner {
-    max-width: 71.25rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    margin-top: 15rem;
-  }
-}
-
-.thanks__heading {
-  color: #fff;
-  font-size: 16px;
-  font-size: 1rem;
-  margin-bottom: 80px;
-  margin-bottom: 5rem;
-  letter-spacing: 2px;
-  letter-spacing: 0.125rem;
-}
-@media screen and (min-width: 768px) {
-  .thanks__heading {
-    font-size: 1.875rem;
-  }
+  padding-bottom: 61px;
+  padding-bottom: 3.8125rem;
 }
 
 .thanks__text {
-  color: #fff;
   font-size: 16px;
   font-size: 1rem;
-  letter-spacing: 2px;
-  letter-spacing: 0.125rem;
+  line-height: 1.6;
+  margin-top: 79px;
+  margin-top: 4.9375rem;
+  margin-bottom: 34px;
+  margin-bottom: 2.125rem;
 }
-@media screen and (min-width: 768px) {
-  .thanks__text {
-    font-size: 1.875rem;
-    margin-bottom: 5rem;
-  }
-  .thanks__text br {
-    display: none;
-  }
+
+.thanks__link {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-decoration: underline;
 }
 
 .page-practice {
@@ -3889,8 +3883,8 @@ dt {
   font-size: 1.125rem;
   color: #1B224C;
   background: #f8f8f8;
-  width: 280px;
-  width: 17.5rem;
+  min-width: 270px;
+  min-width: 16.875rem;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3930,7 +3924,7 @@ dd {
 @media screen and (min-width: 768px) {
   dd {
     line-height: 4rem;
-    padding-left: 3.3125rem;
+    padding-left: 0rem;
   }
 }
 
@@ -4059,8 +4053,6 @@ dd {
   color: #1B224C;
   line-height: 24px;
   line-height: 1.5rem;
-  margin-bottom: 15px;
-  margin-bottom: 0.9375rem;
 }
 @media screen and (min-width: 768px) {
   .home-lead__double-box p {
@@ -4186,11 +4178,21 @@ dd {
 }
 
 .post__blog {
-  width: 50%;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .post__blog {
+    width: 50%;
+  }
 }
 
 .post__news {
-  width: 50%;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .post__news {
+    width: 50%;
+  }
 }
 
 .price {

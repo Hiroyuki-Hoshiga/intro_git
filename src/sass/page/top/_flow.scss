@@ -60,7 +60,7 @@ dt {
   font-size: rem(18);
   color: $base;
   background: #f8f8f8;
-  width: rem(280);
+  min-width: rem(270);
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -85,7 +85,7 @@ dd {
   padding-left: rem(21);
   @include mq("md") {
     line-height: rem(64);
-    padding-left: rem(53);
+    padding-left: rem(0);
   }
 }
 

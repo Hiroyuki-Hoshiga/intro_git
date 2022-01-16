@@ -21,7 +21,7 @@ input {
   margin-bottom: rem(16);
 }
 textarea {
-  margin-top: rem(-25);
+  margin-top: rem(6);
   margin-bottom: rem(16);
 }
 
@@ -39,7 +39,7 @@ textarea {
   padding: rem(16);
   height: 15em;
 }
-
+/* ラジオボタン */
 .radio {
   margin-top: rem(-18);
   label {
@@ -75,7 +75,7 @@ textarea {
   content: "";
   display: block;
   position: absolute;
-  top: 4px;
+  top: 2px;
   left: 4px;
   width: 12px;
   height: 12px;
@@ -91,39 +91,50 @@ textarea {
   }
 }
 
-.checkbox-input{
+input[type="checkbox"] {
+  /* デフォルトcheckボックス非表示*/
   display: none;
 }
-.checkbox-parts{
-  padding-left: 20px;
-  position:relative;
-  margin-right: 10px;
+.mwform-checkbox-field-text {
+  display: inline-block;
+  position: relative;
+  padding: 0 0 0 36px;
+  margin-top: rem(20);
 }
-.checkbox-parts::before{
+.mwform-checkbox-field-text::before,
+.mwform-checkbox-field-text::after {
   content: "";
-  display: block;
   position: absolute;
-  top: 0;
-  left: 0;
+  display: block;
+}
+.mwform-checkbox-field-text::before {
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 2px;
   width: 20px;
   height: 20px;
-  border: 1px solid #707070;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
-.checkbox-input:checked{
-  color: $base;
+.mwform-checkbox-field-text::after {
+  border-width: 3px;
+  border-color: transparent transparent #78a6e4 #78a6e4;
+  border-style: solid;
+  width: 20px;
+  height: 10px;
+  margin-top: -0.2em;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(-45deg);
+  opacity: 0;
 }
-.checkbox-input:checked::after{
-  content: "";
-  display: block;
-  position: absolute;
-  top: -2px;
-  left: 5px;
-  width: 7px;
-  height: 14px;
-  transform: rotate(40deg);
-  border-bottom: 3px solid $base;
-  border-right: 3px solid $base;
+input[type="checkbox"]:checked + .mwform-checkbox-field-text::after {
+  /* css擬似要素 :checked が付加されているときは表示  */
+  opacity: 1;
 }
+
+
 
 .form-button {
   text-align: center;
@@ -141,6 +152,9 @@ textarea {
 
 .block3 {
   margin-top: rem(3);
+}
+.block15 {
+  margin-top: rem(15);
 }
 .block20 {
   margin-top: rem(20);

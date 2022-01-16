@@ -3,9 +3,11 @@
     <div class="billboard-cta__inner">
       <div class="billboard-cta__copy">
         <h2 class="billboard-cta__main">まずは無料で資料請求から</h2>
-        <button class="billboard-cta__btn btn btn--contact">資料請求</button>
+        <a class="" href="<?php bloginfo('url'); ?>/contact/">
+          <button class="billboard-cta__btn btn btn--contact">資料請求</button>
+        </a>
         <div class="billboard-cta__contact">
-          <a class="" href="">お問い合わせ</a>
+          <a class="" href="<?php bloginfo('url'); ?>/contact/">お問い合わせ</a>
         </div>
       </div>
     </div>

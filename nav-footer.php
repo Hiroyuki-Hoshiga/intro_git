@@ -5,9 +5,9 @@
         <div class="footer-nav">
           <ul class="footer-nav__list">
             <li class="footer-nav__item"><a href="/" class="animate-link u-mobile">ホーム</a></li>
-            <li class="footer-nav__item"><a href="#" class="animate-link">お知らせ</a></li>
-            <li class="footer-nav__item"><a href="#" class="animate-link">ブログ</a></li>
-            <li class="footer-nav__item"><a href="#" class="animate-link">コース・料金</a></li>
+            <li class="footer-nav__item"><a href="<?php bloginfo('url'); ?>/news/" class="animate-link">お知らせ</a></li>
+            <li class="footer-nav__item"><a href="<?php bloginfo('url'); ?>/blog/" class="animate-link">ブログ</a></li>
+            <li class="footer-nav__item"><a href="<?php bloginfo('url'); ?>/price/" class="animate-link">コース・料金</a></li>
           </ul>
         </div>
       </div>

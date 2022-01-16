@@ -140,5 +140,11 @@
     figure {
         margin: 0 0 0.5em;
     }
+    img {
+        object-fit: cover;
+        width: auto;
+        height: auto;
+    }
 
 }
+

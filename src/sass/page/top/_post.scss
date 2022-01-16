@@ -13,8 +13,14 @@
 }
 
 .post__blog {
-  width: 50%;
+  width: 100%;
+  @include mq("md") {
+    width: 50%;
+  }
 }
 .post__news {
-  width: 50%;
+  width: 100%;
+  @include mq("md") {
+    width: 50%;
+  }
 }
