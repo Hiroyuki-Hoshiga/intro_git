@@ -85,7 +85,10 @@ textarea {
 
 .checkbox {
   text-align: center;
-  padding-left: rem(52);
+  padding-left: rem(0);
+  @include mq("md") {
+    padding-left: rem(52);
+  }
   a {
     text-decoration: underline;
   }

@@ -55,11 +55,11 @@
   flex: 1;
   font-size: rem(16);
   color: $base;
-  text-align-last: center;
+  text-align: center;
   font-weight: normal;
   
   @include mq("md") {
-    text-align-last: left;
+    text-align: left;
   }
   span {
     margin-left: rem(8);
