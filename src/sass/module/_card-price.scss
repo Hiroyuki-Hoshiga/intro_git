@@ -1,6 +1,7 @@
 .card-price {
   width: 100%;
   height: rem(474);
+  width: 700px;
   @include mq("md") {
     width: 25%;
 }

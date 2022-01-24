@@ -1,28 +1,84 @@
-.price-table {
+.priceTable {
+  width: 100%;
+	padding-bottom: 10px;
+	overflow-x: auto; /*中身がはみ出したら横スクロールバーを出す*/
 }
-
-.price-table__list {
-  display: block;
-  @include mq("md") {
-    display: flex;
+.priceTable__list {
+  display: flex;
+	width: 900px; /*中のテーブルサイズを固定幅にする*/
+  height: 500px;
 }
-}
-
-.price-table__item {
-  height: rem(413);
-  margin-right: rem(0);
-  
-  @include mq("md") {
-    margin-right: rem(8);
-  }
-  &:last-child {
-    margin-right: rem(0);
-  }
-}
-
-.card-price {
+.priceTable__item {
+  height: 413px;
+  margin-right: rem(8);
+  width: 217px;
   text-align: center;
 }
-.card-price__body {
+.priceTable__header {
+  position: relative;
+  font-size: rem(16);
+  line-height: 60px;
+  color: $white;
+  background: $base;
+  margin-top: 36px;
 }
-
+.priceTable__body {
+  padding-left: rem(20);
+  padding-right: rem(20);
+  border-left: 0.5px solid $base;
+  border-right: 0.5px solid $base;
+  border-bottom: 0.5px solid $base;
+  height: inherit;
+}
+.priceTable__main {
+  padding-top: rem(24);
+  margin-bottom: rem(42);
+}
+.priceTable__charge {
+  color: $base;
+  background: $white;
+  font-size: rem(25);
+  line-height: rem(40);
+  font-weight: bold;
+}
+.priceTable__monthly {
+  color: $base;
+  font-size: rem(16);
+  line-height: rem(27);
+}
+.priceTable__check {
+  color: $base;
+  font-size: rem(16);
+  line-height: rem(27);
+}
+.priceTable__check p {
+  margin-bottom: rem(8);
+}
+.fa-check::before {
+  content: "\f00c";
+  margin-right: rem(8);
+}
+.priceTable__item--recommend {
+  .priceTable__header {
+    background: $accent;
+  }
+  .priceTable__header::before {
+    content: 'おすすめ';
+    position: absolute;
+    top: rem(-36);
+    right: rem(0);
+    font-size: rem(16);
+    width: 100%;
+    color: $white;
+    background: $accent;
+    padding-top: rem(16);
+    line-height: rem(24);
+  }
+  .priceTable__body {
+    .priceTable__main {
+      .priceTable__charge {
+        color: $accent;
+      }
+    }
+  }
+}

@@ -141,3 +141,6 @@ $(function () {
     }
   });
 });
+/* ScrollHint */
+
+new ScrollHint('.js-scrollable');

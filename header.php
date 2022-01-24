@@ -24,6 +24,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
   <!-- swiper_css -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+ <!-- ScrollHint -->
+  <link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
+  <script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
   <!-- css -->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/styles.css">
 

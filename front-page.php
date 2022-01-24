@@ -95,7 +95,7 @@
       <div class="price__billboard-price billboard-price">
         <div class="billboard-price__copy">
           <h2 class="billboard-price__main">Engressの料金プランはこちら</h2>
-          <a class="" href="<?php bloginfo('url'); ?>/contact/">
+          <a class="" href="<?php bloginfo('url'); ?>/price/">
             <button class="billboard-price__btn btn btn--price">料金を見てみる</button>
           </a>
         </div>
@@ -107,102 +107,102 @@
   <section class="model">
     <div class="model__inner l-inner">
       <div class="model__heading"><p>TOEFL成功事例</p></div>
-      <ul class="cards-model">
-        <?php if (have_posts()): while(have_posts()): the_post(); ?>
-        <li class="cards-model__item card-model">
-          <div class="card-model__copy">
-            <?php if( get_field('copy1') ) { ?>
-              <?php the_field('copy1'); ?>
-            <?php } ?>
-          </div>
-          <div class="card-model__image">
-            <?php $image = get_field('image1'); if( !empty($image) ): ?>
-              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-            <?php endif; ?>
-          </div>
-          <div class="card-model__body">
-            <div class="card-model__title">
-              <div class="card-model__occupation">
-                <?php if( get_field('occupation1') ) { ?>
-                  <?php the_field('occupation1'); ?>
-                <?php } ?>
-              </div>
-              <div class="card-model__name">
-                <?php if( get_field('name1') ) { ?>
-                  <?php the_field('name1'); ?>
-                <?php } ?>
-              </div>
+      <ul class="cardList03">
+      <?php if (have_posts()): while(have_posts()): the_post(); ?>
+      <li class="cardList03__item card-model">
+        <div class="card-model__copy">
+          <?php if( get_field('copy1') ) { ?>
+            <?php the_field('copy1'); ?>
+          <?php } ?>
+        </div>
+        <div class="card-model__image">
+          <?php $image = get_field('image1'); if( !empty($image) ): ?>
+            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+          <?php endif; ?>
+        </div>
+        <div class="card-model__body">
+          <div class="card-model__title">
+            <div class="card-model__occupation">
+              <?php if( get_field('occupation1') ) { ?>
+                <?php the_field('occupation1'); ?>
+              <?php } ?>
             </div>
-            <div class="card-model__score">
-              <?php if( get_field('score1') ) { ?>
-                <?php the_field('score1'); ?>
+            <div class="card-model__name">
+              <?php if( get_field('name1') ) { ?>
+                <?php the_field('name1'); ?>
               <?php } ?>
             </div>
           </div>
-        </li>
-        <li class="cards-model__item card-model">
-          <div class="card-model__copy">
-            <?php if( get_field('copy2') ) { ?>
-              <?php the_field('copy2'); ?>
+          <div class="card-model__score">
+            <?php if( get_field('score1') ) { ?>
+              <?php the_field('score1'); ?>
             <?php } ?>
           </div>
-          <div class="card-model__image">
-            <?php $image = get_field('image2'); if( !empty($image) ): ?>
-              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-            <?php endif; ?>
-          </div>
-          <div class="card-model__body">
-            <div class="card-model__title">
-              <div class="card-model__occupation">
-                <?php if( get_field('occupation2') ) { ?>
-                  <?php the_field('occupation2'); ?>
-                <?php } ?>
-              </div>
-              <div class="card-model__name">
-                <?php if( get_field('name2') ) { ?>
-                  <?php the_field('name2'); ?>
-                <?php } ?>
-              </div>
+        </div>
+      </li>
+      <li class="cardList03__item card-model">
+        <div class="card-model__copy">
+          <?php if( get_field('copy2') ) { ?>
+            <?php the_field('copy2'); ?>
+          <?php } ?>
+        </div>
+        <div class="card-model__image">
+          <?php $image = get_field('image2'); if( !empty($image) ): ?>
+            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+          <?php endif; ?>
+        </div>
+        <div class="card-model__body">
+          <div class="card-model__title">
+            <div class="card-model__occupation">
+              <?php if( get_field('occupation2') ) { ?>
+                <?php the_field('occupation2'); ?>
+              <?php } ?>
             </div>
-            <div class="card-model__score">
-              <?php if( get_field('score2') ) { ?>
-                <?php the_field('score2'); ?>
+            <div class="card-model__name">
+              <?php if( get_field('name2') ) { ?>
+                <?php the_field('name2'); ?>
               <?php } ?>
             </div>
           </div>
-        </li>
-        <li class="cards-model__item card-model">
-          <div class="card-model__copy">
-            <?php if( get_field('copy3') ) { ?>
-              <?php the_field('copy3'); ?>
+          <div class="card-model__score">
+            <?php if( get_field('score2') ) { ?>
+              <?php the_field('score2'); ?>
             <?php } ?>
           </div>
-          <div class="card-model__image">
-            <?php $image = get_field('image3'); if( !empty($image) ): ?>
-              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-            <?php endif; ?>
-          </div>
-          <div class="card-model__body">
-            <div class="card-model__title">
-              <div class="card-model__occupation">
-                <?php if( get_field('occupation3') ) { ?>
-                  <?php the_field('occupation3'); ?>
-                <?php } ?>
-              </div>
-              <div class="card-model__name">
-                <?php if( get_field('name3') ) { ?>
-                  <?php the_field('name3'); ?>
-                <?php } ?>
-              </div>
+        </div>
+      </li>
+      <li class="cardList03__item  card-model">
+        <div class="card-model__copy">
+          <?php if( get_field('copy3') ) { ?>
+            <?php the_field('copy3'); ?>
+          <?php } ?>
+        </div>
+        <div class="card-model__image">
+          <?php $image = get_field('image3'); if( !empty($image) ): ?>
+            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+          <?php endif; ?>
+        </div>
+        <div class="card-model__body">
+          <div class="card-model__title">
+            <div class="card-model__occupation">
+              <?php if( get_field('occupation3') ) { ?>
+                <?php the_field('occupation3'); ?>
+              <?php } ?>
             </div>
-            <div class="card-model__score">
-              <?php if( get_field('score3') ) { ?>
-                <?php the_field('score3'); ?>
+            <div class="card-model__name">
+              <?php if( get_field('name3') ) { ?>
+                <?php the_field('name3'); ?>
               <?php } ?>
             </div>
           </div>
-        </li>
-        <?php endwhile; endif; ?>
+          <div class="card-model__score">
+            <?php if( get_field('score3') ) { ?>
+              <?php the_field('score3'); ?>
+            <?php } ?>
+          </div>
+        </div>
+      </li>
+      <?php endwhile; endif; ?>
       </ul>
     </div>
   </section>

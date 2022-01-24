@@ -41,69 +41,73 @@ Template Name: コース・料金
       </div>
       
       <div class="page-price__header-table">料金表</div>
-      <div class="page-price__price-table price-table">
-        <ul class="price-table__list">
-          <li class="price-table__item card-price">
-            <div class="card-price__header">基礎プラン</div>
-            <div class="card-price__body">
-              <div class="card-price__main">
-                <div class="card-price__charge">59,000円~</div>
-                <div class="card-price__monthly">*月額（税抜価格）</div>
+      <div class="page-price__price-table">
+        <div class="priceTable js-scrollable">
+          <ul class="priceTable__list">
+            <li class="priceTable__item">
+              <div class="priceTable__header">基礎プラン</div>
+              <div class="priceTable__body">
+                <div class="priceTable__main">
+                  <div class="priceTable__charge">59,000円~</div>
+                  <div class="priceTable__monthly">*月額（税抜価格）</div>
+                </div>
+                <div class="priceTable__check">
+                  <p><i class="fa fa-check"></i>カリキュラム作成</p>
+                  <p><i class="fa fa-check"></i>TOEFL学習サポート</p>
+                  <p><i class="fa fa-check"></i>週一回のビデオMTG</p>
+                </div>
               </div>
-              <div class="card-price__check">
-                <p><i class="fa fa-check"></i>カリキュラム作成</p>
-                <p><i class="fa fa-check"></i>TOEFL学習サポート</p>
-                <p><i class="fa fa-check"></i>週一回のビデオMTG</p>
+            </li>
+            <li class="priceTable__item">
+              <div class="priceTable__header">演習プラン</div>
+              <div class="priceTable__body">
+                <div class="priceTable__main">
+                  <div class="priceTable__charge">75,000円~</div>
+                  <div class="priceTable__monthly">*月額（税抜価格）</div>
+                </div>
+                <div class="priceTable__check">
+                  <p><i class="fa fa-check"></i>カリキュラム作成</p>
+                  <p><i class="fa fa-check"></i>TOEFL学習サポート</p>
+                  <p><i class="fa fa-check"></i>週一回のビデオMTG</p>
+                  <p><i class="fa fa-check"></i>月二回の模試（解説 付き）</p>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="price-table__item card-price">
-            <div class="card-price__header">演習プラン</div>
-            <div class="card-price__body">
-              <div class="card-price__main">
-                <div class="card-price__charge">75,000円~</div>
-                <div class="card-price__monthly">*月額（税抜価格）</div>
+            </li>
+            <li class="priceTable__item priceTable__item--recommend">
+              <div class="priceTable__header">志望校対策プラン</div>
+              <div class="priceTable__body">
+                <div class="priceTable__main">
+                  <div class="priceTable__charge">95,000円~</div>
+                  <div class="priceTable__monthly">*月額（税抜価格）</div>
+                </div>
+                <div class="priceTable__check">
+                  <p><i class="fa fa-check"></i>カリキュラム作成</p>
+                  <p><i class="fa fa-check"></i>TOEFL学習サポート</p>
+                  <p><i class="fa fa-check"></i>週一回のビデオMTG</p>
+                  <p><i class="fa fa-check"></i>月二回の模試（解説 付き）</p>
+                  <p><i class="fa fa-check"></i>週一の英語面接対策</p>
+                </div>
               </div>
-              <div class="card-price__check">
-                <p><i class="fa fa-check"></i>カリキュラム作成</p>
-                <p><i class="fa fa-check"></i>TOEFL学習サポート</p>
-                <p><i class="fa fa-check"></i>週一回のビデオMTG</p>
-                <p><i class="fa fa-check"></i>月二回の模試（解説 付き）</p>
+            </li>
+            <li class="priceTable__item priceCard">
+              <div class="priceTable__header">フレックスプラン</div>
+              <div class="priceTable__body">
+                <div class="priceTable__main">
+                  <div class="priceTable__charge">60,000円~</div>
+                  <div class="priceTable__monthly">*月額（税抜価格）</div>
+                </div>
+                <div class="priceTable__check"><p>＊別途ご相談ください</p></div>
               </div>
-            </div>
-          </li>
-          <li class="price-table__item card-price card-price--recommend">
-            <div class="card-price__header">志望校対策プラン</div>
-            <div class="card-price__body">
-              <div class="card-price__main">
-                <div class="card-price__charge">95,000円~</div>
-                <div class="card-price__monthly">*月額（税抜価格）</div>
-              </div>
-              <div class="card-price__check">
-                <p><i class="fa fa-check"></i>カリキュラム作成</p>
-                <p><i class="fa fa-check"></i>TOEFL学習サポート</p>
-                <p><i class="fa fa-check"></i>週一回のビデオMTG</p>
-                <p><i class="fa fa-check"></i>月二回の模試（解説 付き）</p>
-                <p><i class="fa fa-check"></i>週一の英語面接対策</p>
-              </div>
-            </div>
-          </li>
-          <li class="price-table__item card-price">
-            <div class="card-price__header">フレックスプラン</div>
-            <div class="card-price__body">
-              <div class="card-price__main">
-                <div class="card-price__charge">60,000円~</div>
-                <div class="card-price__monthly">*月額（税抜価格）</div>
-              </div>
-              <div class="card-price__check">
-                <p>＊別途ご相談ください</p>
-              </div>
-            </div>
-          </li>
-        </ul>
-    </div>
-  </section>
+            </li>
+          </ul>
+        </div>
+      </div>
 
+
+
+        </div>
+      </section>
+      
  
 <?php get_template_part('parts-contact'); ?>
 <?php get_template_part('nav-footer'); ?>
