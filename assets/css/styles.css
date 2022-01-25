@@ -1381,7 +1381,7 @@ select::-ms-expand {
   margin-top: 20px;
 }
 
-@media screen and (min-width: 600px), print {
+@media screen and (min-width: 768px), print {
   .cardList03 {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1395,12 +1395,6 @@ select::-ms-expand {
 
   .cardList03__item {
     margin-left: 20px;
-    width: calc(50% - 20px);
-    /*各列の左マージン分合計を除いて1/2*/
-  }
-}
-@media screen and (min-width: 992px), print {
-  .cardList03__item {
     width: calc(33.33333% - 20px);
     /*各列の左マージン分合計を除いて1/3*/
   }

@@ -66,19 +66,14 @@
 .cardList03__item {
 	margin-top: 20px;
 }
-@media screen and (min-width: 600px),print {
-	.cardList03 {
-		flex-direction: row;
-		flex-wrap: wrap;
-		margin-left: -20px; /*左端列の左マージンを相殺*/
-	}
+@media screen and (min-width: 768px),print {
+  .cardList03 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -20px; /*左端列の左マージンを相殺*/
+  }
 	.cardList03__item {
-		margin-left: 20px;
-		width: calc((100% - 40px) / 2); /*各列の左マージン分合計を除いて1/2*/
-	}
-}
-@media screen and (min-width: 992px),print {
-	.cardList03__item {
+    margin-left: 20px;
 		width: calc((100% - 60px) / 3); /*各列の左マージン分合計を除いて1/3*/
 	}
 }
